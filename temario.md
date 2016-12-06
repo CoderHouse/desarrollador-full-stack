@@ -1,4 +1,4 @@
-# curso-mern
+# Curso Mern Stack
 
 
 ## Intro
