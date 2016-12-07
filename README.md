@@ -2,7 +2,7 @@
 
 ## Acerca del curso
 
-Conviértete en un Desarrollador Full Stack con nuestro curso más avanzado y nuestro moderno plan de estudio que incluye las ultimas tecnologías: **Node.js**, **Express**, **MongoDB** y más.
+Conviértete en un Desarrollador Full Stack con nuestro curso más avanzado y nuestro moderno plan de estudio que incluye las últimas tecnologías: **React**, **Redux**, **Webpack**, **Node.js**, **Express**, **MongoDB** y más.
 
 Este curso te permitira:
 
