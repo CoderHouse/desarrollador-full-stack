@@ -2,6 +2,6 @@
 
 * [Introduction](README.md)
 * Destinatarios
-* Pre-requisitos
+* [Pre-requisitos](pre-requisitos.md)
 * [Temario](temario.md)
 
