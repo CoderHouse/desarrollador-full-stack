@@ -1,4 +1,4 @@
-# mern-stack
+# Full Stack
 
 ## Acerca del curso
 
