@@ -68,40 +68,54 @@ con plugins
  
 ## Node
 * Definiciones
- * Que es node? como funciona? Difrencias con otros lenguajes
+ * Qué es node? cómo funciona? Difrencias con otros lenguajes
 * npm
- * Que es npm? npm install Otros comandos
+ * Qué es npm? npm install Otros comandos
 * package.json
- * Que son las dependencies? Que es el versionado semantico? Para que sirven los scripts? Otras partes de package.json ' main' 'bin' 'version'
+ * Qué son las dependencies? Qué es el versionado semantico? Para qué sirven los scripts? Otras partes de package.json ' main 'bin 'version
 * modules (require)
- * Comando require Que son los modules?
+ * Comando require Qué son los modules?
 
 
 ## Node
 * eventos
+ * Qué son los eventos en node? Creación y manejo de eventos
 * files
+ * Manejo de archivos en node
 
 ## Node
 * streams
+ * Qué es un stream? Para qué se usa? Manejo de streams
 * HTTP
+ * Modulo HTTP Como usarlo?
 
 ## Express
 * Qué es express? ventajas sobre HTTP
 * routing
+ * Routeo con Express
 * middleware
+ * Qué es un middleware? Para qué se usa? Cómo configurarlo?
 
 ## REST
 * API Rest
+ * Definicion de REST. json-server Construcción de una api
 
 ## Mongo
 * Definiciones
+ * Qué es NoSQL? Otras bases noSQL Diferencas con SQL
 * Operaciones
+ * Operaciones básicas de CRUD
 * Moongose
+ * Qué es? Para qué sive? Implementación
 
 ## Tools
 * Heroku
+ * Qué es heroku? Subir un proyecto a heroku
 * Firebase
+ * Qué es el servicio de firebase? Implementación
 
 ## GIT
 * Git
+ * Repaso de comandos de git
 * Github
+ * Uso de github. pull-request's
