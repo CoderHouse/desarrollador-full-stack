@@ -18,7 +18,18 @@
 * Clases
  * La implementación de ES6 para poder trabajar con clases y herencia
 
-## Tools y React
+## Node
+
+* definiciones
+ * Qué es node? cómo funciona? Difrencias con otros lenguajes
+* npm
+ * Qué es npm? npm install Otros comandos
+* package.json
+ * Qué son las dependencies? Qué es el versionado semantico? Para qué sirven los scripts? Otras partes de package.json 'main 'bin 'version
+* modules (require)
+ * Comando require. Qué son los modules?
+ 
+## Tools 
 
 * Babel
  * Qué es transpilar y para qué nos sirve?
@@ -27,8 +38,7 @@
 * Webpack
  * loader
  * plugins 
- * Qué es webpack y para que sirve. Cual es la potencia de los loaders, y como extenderlo
-con plugins
+ * Qué es webpack y para que sirve. Cual es la potencia de los loaders, y como extenderlo con plugins
 
 ## React
 
@@ -59,63 +69,70 @@ con plugins
 * Redux
  * Qué es flux? Qué es redux? Cómo funciona?
 
-## Clase 7
+## CSS y Routing
 
 * CSS
  * Diferentes tipos de implementacion de CSS en componentes de React. * Inline * Radium * CSS Modules
 * Routing
  * React Router
  
-## Node
-* Definiciones
- * Qué es node? cómo funciona? Difrencias con otros lenguajes
-* npm
- * Qué es npm? npm install Otros comandos
-* package.json
- * Qué son las dependencies? Qué es el versionado semantico? Para qué sirven los scripts? Otras partes de package.json ' main 'bin 'version
-* modules (require)
- * Comando require Qué son los modules?
+## Workshop React (Parte 1)
 
+## Workshop React (Parte 2)
 
 ## Node
+
 * eventos
- * Qué son los eventos en node? Creación y manejo de eventos
+ * Que son los eventos en node? Creacion y manejo de eventos
 * files
  * Manejo de archivos en node
-
+ 
 ## Node
+ 
 * streams
  * Qué es un stream? Para qué se usa? Manejo de streams
 * HTTP
- * Modulo HTTP Como usarlo?
-
+ * Módulo HTTP. Cómo usarlo?
+ 
 ## Express
-* Qué es express? ventajas sobre HTTP
+
+* Intro
+ * Qué es express? ventajas sobre HTTP
 * routing
  * Routeo con Express
 * middleware
  * Qué es un middleware? Para qué se usa? Cómo configurarlo?
+ 
+## REST 
 
-## REST
 * API Rest
- * Definicion de REST. json-server Construcción de una api
+ * Definicion de REST. json-server Construccion de una api. postman
+ 
+## Workshop Node
 
 ## Mongo
-* Definiciones
+
+* definiciones
  * Qué es NoSQL? Otras bases noSQL Diferencas con SQL
-* Operaciones
+* operaciones
  * Operaciones básicas de CRUD
-* Moongose
+* moongose
  * Qué es? Para qué sive? Implementación
+ 
+## Workshop Mongo
 
 ## Tools
-* Heroku
+
+* heroku
  * Qué es heroku? Subir un proyecto a heroku
 * Firebase
  * Qué es el servicio de firebase? Implementación
+ 
+## Git
 
-## GIT
-* Git
+* git
  * Repaso de comandos de git
-* Github
+* github
  * Uso de github. pull-request's
+
+## Proyecto Final
