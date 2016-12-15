@@ -1,5 +1,12 @@
 # Temario
 
+## Git
+
+* git
+ * Repaso de comandos de git
+* github
+ * Uso de github. pull-request's
+
 ## JavaScript ES6
 
 * Const y let
@@ -134,12 +141,5 @@
  * Buildpack de Webpack
 * Firebase
  * Qué es el servicio de firebase? Implementación
- 
-## Git
-
-* git
- * Repaso de comandos de git
-* github
- * Uso de github. pull-request's
 
 ## Proyecto Final
