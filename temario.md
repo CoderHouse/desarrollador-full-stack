@@ -1,6 +1,6 @@
 # Temario
 
-## JavaScript
+## JavaScript ES6
 
 * Const y let
  * Cuáles son las nuevas definiciones de variables y cuáles sus diferencias
@@ -11,8 +11,9 @@
 * String Templates
  * Cómo podemos trabajar con strings de manera más sencilla
 
-## JavaScript
+## JavaScript ES6
 
+* Programacion Funcional
 * Promises
  * fetch() y las ventajas de trabajar con promesas en lugar de callbacks
 * Clases
@@ -86,9 +87,11 @@
  * Que son los eventos en node? Creacion y manejo de eventos
 * files
  * Manejo de archivos en node
+* Lodash - Programacion funcional
  
 ## Node
  
+* Async.js - Asincronismo controlado de manera funcional
 * streams
  * Qué es un stream? Para qué se usa? Manejo de streams
 * HTTP
@@ -107,6 +110,7 @@
 
 * API Rest
  * Definición de REST. json-server Construccion de una api. postman
+* Seguridad con Helmet.js
  
 ## Workshop Node
 
@@ -118,6 +122,8 @@
  * Operaciones básicas de CRUD
 * moongose
  * Qué es? Para qué sive? Implementación
+* operaciones
+ * Operaciones básicas con Mongoose
  
 ## Workshop Mongo
 
@@ -125,6 +131,7 @@
 
 * heroku
  * Qué es heroku? Subir un proyecto a heroku
+ * Buildpack de Webpack
 * Firebase
  * Qué es el servicio de firebase? Implementación
  
