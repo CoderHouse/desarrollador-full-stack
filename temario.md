@@ -89,8 +89,6 @@
  
 ## Workshop React (Parte 1)
 
-## Workshop React (Parte 2)
-
 ## Node
 
 * eventos
@@ -145,4 +143,6 @@
  * Instalar MongoLab (gratis) e implementar
  * Variables de entorno
 
-## Proyecto Final
+## Proyecto Final (Parte 1)
+
+## Proyecto Final (Parte 2)
