@@ -143,6 +143,4 @@
  * Instalar MongoLab (gratis) e implementar
  * Variables de entorno
 
-## Proyecto Final (parte 1)
-
-## Proyecto Final (parte 2)
+## Proyecto Final
