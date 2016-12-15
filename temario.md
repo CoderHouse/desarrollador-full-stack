@@ -77,6 +77,15 @@
  * Diferentes tipos de implementación de CSS en componentes de React. * Inline * Radium * CSS Modules
 * Routing
  * React Router
+
+## Tools
+
+* heroku
+ * Qué es heroku? Subir un proyecto a heroku
+ * Instalar Papertrail
+ * Buildpack de Webpack
+* Firebase
+ * Qué es el servicio de firebase? Implementación
  
 ## Workshop React (Parte 1)
 
@@ -131,10 +140,8 @@
 ## Tools
 
 * heroku
- * Qué es heroku? Subir un proyecto a heroku
- * Buildpack de Webpack
-* Firebase
- * Qué es el servicio de firebase? Implementación
+ * Instalar MongoLab (gratis) e implementar
+ * Variables de entorno
 
 ## Proyecto Final (parte 1)
 
