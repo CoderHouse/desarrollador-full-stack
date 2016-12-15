@@ -72,7 +72,7 @@
 ## CSS y Routing
 
 * CSS
- * Diferentes tipos de implementacion de CSS en componentes de React. * Inline * Radium * CSS Modules
+ * Diferentes tipos de implementación de CSS en componentes de React. * Inline * Radium * CSS Modules
 * Routing
  * React Router
  
@@ -106,7 +106,7 @@
 ## REST 
 
 * API Rest
- * Definicion de REST. json-server Construccion de una api. postman
+ * Definición de REST. json-server Construccion de una api. postman
  
 ## Workshop Node
 
