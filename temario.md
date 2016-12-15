@@ -1,11 +1,5 @@
 # Temario
 
-## Git
-
-* git
- * Repaso de comandos de git
-* github
- * Uso de github. pull-request's
 
 ## JavaScript ES6
 
@@ -142,4 +136,6 @@
 * Firebase
  * Qué es el servicio de firebase? Implementación
 
-## Proyecto Final
+## Proyecto Final (parte 1)
+
+## Proyecto Final (parte 2)
