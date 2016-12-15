@@ -97,11 +97,13 @@
  * Que son los eventos en node? Creacion y manejo de eventos
 * files
  * Manejo de archivos en node
-* Lodash - Programacion funcional
+* Lodash 
+ * Programacion funcional
  
 ## Node
  
-* Async.js - Asincronismo controlado de manera funcional
+* Async.js 
+ * Asincronismo controlado de manera funcional
 * streams
  * Qué es un stream? Para qué se usa? Manejo de streams
 * HTTP
