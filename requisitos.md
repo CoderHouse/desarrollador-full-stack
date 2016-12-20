@@ -1,4 +1,4 @@
-#Pre-requisitos
+# Requisitos
 
 * HTML y CSS
 * Entender como funciona AJAX y una API
@@ -17,3 +17,8 @@
   * Base de Datos y Base de Datos no-relacionales
   * Grunt, Gulp o Webpack para Automatizar tareas
   * CLI o Linea de comandos
+  
+------------
+
+* Contar con tiempo fuera de clase para poder realizar los trabajos prácticos.
+  
