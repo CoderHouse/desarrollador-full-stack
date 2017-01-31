@@ -75,11 +75,17 @@ En Javascript, conseguimos este comportamiento utilizando la palabra reservada e
 
 #### Promesas
 
-###### Implementar un emtodo get que reciba como parametro una url y realize una peticion, devolciendo dicha peticion como promesa, sin importar el resultado
+###### Implementar un metodo get:
+* que reciba como parametro una url
+* que realize una peticion, devolviendo dicha peticion como promesa, sin importar el resultado
 
-###### Implementar un metodo getJSON que reciba como parametro una url, llame al metodo get psandole esa url, y si la promesa se resuelve, devolver una promesa con la respuesta en formato json
+###### Implementar un metodo getJSON
+* que reciba como parametro una url
+* llame al metodo get pasandole esa url, y si la promesa se resuelve, devolver una promesa con la respuesta en formato json
 
-###### Invocar al metodo getJSON con la url 'https://jsonplaceholder.typicode.com/posts'. Mostrar el resultado si la peticion se logra hacer o mostrar el mensaje de error si no se pude realizar al peticion.
+###### Invocar al metodo getJSON
+* pasarle la url 'https://jsonplaceholder.typicode.com/posts'.
+* Mostrar el resultado si la peticion se logra hacer o mostrar el mensaje de error si no se pude realizar al peticion.
 
 #### Clases
 
@@ -146,3 +152,5 @@ que tenga los metodos y propiedades de los fronteders y backenders
 
 
 Una de estas clases debe saber hacer peticiones mediante la API fetch
+=======
+>>>>>>> 0958fab73db0f0f149b30d88e9241c565c61b5b8
