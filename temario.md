@@ -15,6 +15,9 @@
 ## JavaScript ES6
 
 * Programacion Funcional
+  * Conceptos basicos:
+    * Inmutabilidad de datos
+    * Funciones puras
 * Promises
  * fetch() y las ventajas de trabajar con promesas en lugar de callbacks
 * Clases
@@ -27,11 +30,17 @@
 * npm
  * Qué es npm? npm install Otros comandos
 * package.json
- * Qué son las dependencies? Qué es el versionado semantico? Para qué sirven los scripts? Otras partes de package.json 'main 'bin 'version
+ * Qué son las dependencies?
+ * Qué es el versionado semantico?
+ * Para qué sirven los scripts?
+ * Otras partes de package.json
+    * main
+    * bin
+    * version
 * modules (require)
  * Comando require. Qué son los modules?
- 
-## Tools 
+
+## Tools
 
 * Babel
  * Qué es transpilar y para qué nos sirve?
@@ -39,7 +48,7 @@
  * Las ventajas de tener un código ordenado y coherente
 * Webpack
  * loader
- * plugins 
+ * plugins
  * Qué es webpack y para que sirve. Cual es la potencia de los loaders, y como extenderlo con plugins
 
 ## React
@@ -66,10 +75,22 @@
 * Eventos y refs
  * Cómo son los eventos en React
 
-## Redux
+## Flux y Redux
 
-* Redux
+* Flux
  * Qué es flux? Qué es redux? Cómo funciona?
+* Redux
+  * Store
+  * Acciones
+    * dispatch()
+    * suscribe()
+  * Reducer
+  * Containers
+
+## Redux
+* Reducers combinados
+* coneccion con React Router
+* ejemplos y practica
 
 ## CSS y Routing
 
@@ -86,7 +107,7 @@
  * Buildpack de Webpack
 * Firebase
  * Qué es el servicio de firebase? Implementación
- 
+
 ## Workshop React (Parte 1)
 
 ## Node
@@ -95,18 +116,18 @@
  * Que son los eventos en node? Creacion y manejo de eventos
 * files
  * Manejo de archivos en node
-* Lodash 
+* Lodash
  * Programacion funcional
- 
+
 ## Node
- 
-* Async.js 
+
+* Async.js
  * Asincronismo controlado de manera funcional
 * streams
  * Qué es un stream? Para qué se usa? Manejo de streams
 * HTTP
  * Módulo HTTP. Cómo usarlo?
- 
+
 ## Express
 
 * Intro
@@ -115,13 +136,16 @@
  * Routeo con Express
 * middleware
  * Qué es un middleware? Para qué se usa? Cómo configurarlo?
- 
-## REST 
+
+## REST
 
 * API Rest
- * Definición de REST. json-server Construccion de una api. postman
+ * Definición de REST
+  * json-server
+  * Construccion de una api
+  * postman
 * Seguridad con Helmet.js
- 
+
 ## Workshop Node
 
 ## Mongo
@@ -134,7 +158,7 @@
  * Qué es? Para qué sive? Implementación
 * operaciones
  * Operaciones básicas con Mongoose
- 
+
 ## Workshop Mongo
 
 ## Tools
