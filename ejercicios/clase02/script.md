@@ -131,7 +131,7 @@ Usando el array de posteos del ejercio anterior crear:
     "58c2b1635ffb495016775b12": [posts del usuario...]    
 }
 ```
-- Una función que me devuelva los posts sin el summary usando `map`
+- Una función que me devuelva los posts sobreescribiendo el titulo a un texto fijo (ej: 'la maquinita') usando map `map`
 - Una función que devuelva si alguno de los posts tiene un link con el valor `http://example.com` usando `some`
 - Una función que me devuelva si todos los posts tienen la key title usando `every` y `includes`.
 
@@ -157,7 +157,7 @@ Promises
     + Reject
     + All
 
-### Ejercicio
+### Ejercicio 7
 Modificar el siguiente código para utilizar Promises en lugar de callbacks:
 
 ```javascript

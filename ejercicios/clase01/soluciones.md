@@ -1,4 +1,5 @@
 ### Ejercicio 1
+
 - ¿Qué es el scope?
 Es el alcance donde una variable puede utilizarse. Todas las variables definidas usando var son visibles dentro de la funcion padre mas próxima. En cambio las definidas usando let tienen alcance de bloque.
 
@@ -17,6 +18,7 @@ const sirve para definir constantes. Identificadores que una vez que son asignad
 ### Ejercicio 2
 - Crear una función constructora llamada `User` que tenga las siguientes propiedades privadas: userId (Integer), username (string), name (string), surname(string) y posts (array). Asimismo debe contar con un metodo publico para obterner todos los posts del usuario.
 
+**Solución**
 ```javascript
 function User() {
     var userId;
@@ -35,6 +37,7 @@ function User() {
 ### Ejercicio 3
 Tomando como base el ejercio anterior usar template strings para obtener el nombre de usuario junto con la cantidad the posts que publicó. Ej: topicus1 (77)
 
+**Solución**
 ```javascript
 function User() {
     var userId;
