@@ -1,11 +1,12 @@
-Nivelación
-==========
+## Nivelación
+
 - Closures
 - Local and global scope
 - Hoising
 - Event loop
 - Sync / Async
 - Para que sirve this
+- Un breve repaso de orientación a objetos
 
 ```javascript
 function createUser() {
@@ -31,6 +32,8 @@ console.log(surname);
 console.log(window.surname);
 ```
 
+
+## ES2015
 
 Let y const
 =================

@@ -28,12 +28,31 @@ import posts from './posts'; // Usar la lista de posts de la clase 2
 import './App.css';
 
 class App extends Component {
+    componentDidMount() {
+      request('http://localhost:3000/posts')
+      .then((response) => {
+        this.setState({posts: JSON.parse(response)});
+      });      
+    }
     render() {
         return (
-            <PostList posts={posts}/>
+            <PostList posts={this.state.posts}/>
         );
     }    
 }
 
 export default App;
+```
+
+### Ejercicio 11
+
+```javascript
+import React, { Component } from 'react';
+const Post = ({alias, imageURL}) => (
+  <div>
+    <span>{alias}</span>
+    <img src={imageURL} width="50" height="50"/>
+  </div>
+);
+export default Post;
 ```
