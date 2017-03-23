@@ -28,6 +28,10 @@ import posts from './posts'; // Usar la lista de posts de la clase 2
 import './App.css';
 
 class App extends Component {
+    constructor(props) {
+      super(props);
+      this.state = {};
+    }
     componentDidMount() {
       request('http://localhost:3000/posts')
       .then((response) => {
