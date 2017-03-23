@@ -1,5 +1,6 @@
-## Nivelación
+# ES2015
 
+## Nivelación
 - Closures
 - Local and global scope
 - Hoising
@@ -82,8 +83,7 @@ Como regla general usar const siempre que no necesitemos reasignar un valor al i
 - ¿Qué es el hoising?
 - ¿Para que sirve const?
 
-Arrow functions
-====================================================================
+## Arrow functions
 - Una nueva sintaxis para definir funciones
 - No crean un nuevo closure, en otras palabras this hace referencia a la función más proxima hacia arriba en la jerarquía.
 
@@ -157,8 +157,7 @@ let car = new Car('BMW', 'Azul');
 ### Ejercicio 2
 - Crear una función constructora llamada `User` que tenga las siguientes propiedades privadas: userId (Integer), username (string), name (string), surname(string) y posts (array). Asimismo debe contar con un metodo publico para obterner todos los posts del usuario.
 
-String Templates
-====================================================================
+## String Templates
 - Interpolación
 - Multiline
 - Strings como funciones

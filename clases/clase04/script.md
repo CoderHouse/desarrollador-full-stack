@@ -1,6 +1,6 @@
-## React
+# React
 
-### Listas y Claves
+## Listas y Claves
 - Cuando queremos crear listas es necesario utilizar algún tipo de loop. En react es muy común utilizar map para lograrlo.
 
 ```javascript
@@ -20,20 +20,20 @@ class App extends Component {
 - Las claves deben ser únicas dentro de un grupo de nodos hermanos. Por ejemplo: los li dentro de un ul.
 - Las claves deben ser únicas en el tiempo. Es decir que el nodo del DOM correspondiente al post 125 sea siempre el mismo. Nombrar ejemplo del file input y los problemas derivados de no usar key.
 
-### Eventos
+## Eventos
 - La forma de manejar los eventos en react es muy similar a como se hace en el DOM o con jQuery.
 - React trabaja con eventos sinteticos los cuales son muy similares a los eventos de javascript pero salvan las diferencias entre las distintas implementaciones en cada browser.
 
-**Lista de los eventos más usados**
+### Lista de los eventos más usados
 
-MOUSE
+**MOUSE**
 onClick onDoubleClick onMouseDown onMouseEnter onMouseLeave
 onMouseMove onMouseOut onMouseOver onMouseUp
 
-KEYBOARD
+**KEYBOARD**
 onKeyDown onKeyPress onKeyUp
 
-FORMS
+**FORMS**
 onChange onInput onSubmit
 
 Para una lista detallada de todos los eventos soportados por react:

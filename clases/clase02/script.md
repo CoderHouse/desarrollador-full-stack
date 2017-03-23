@@ -1,7 +1,6 @@
-## ES2015
+# ES2015
 
-Programación funcional
-======================
+## Programación funcional
 - Que es la programación funcional
 - Pilares de la programación funcional
 - Funciones que devuelven funciones
@@ -19,8 +18,7 @@ const getLatestFive = createLatest(5);
 const latests = getLatestFive(posts);
 ```
 
-Array Methods
-====================================================================
+## Array Methods
 - Map and reduce
 - Filter, some, every and includes
 - Keys and values
@@ -40,8 +38,7 @@ Usando el array de posteos del ejercio anterior crear:
 - Una función que devuelva si alguno de los posts tiene un link con el valor `http://example.com` usando `some`
 - Una función que me devuelva si todos los posts tienen la key title usando `every` y `includes`.
 
-Clases
-====================================================================
+## Clases
 - Sintaxis
 - Constructores
 - Subclases
@@ -50,8 +47,7 @@ Clases
 ### Ejercicio 6
 - Migrar la función constructora `User` creada en el ejercicio 2 a una clase.
 
-Promises
-====================================================================
+## Promises
 - Que son las promesas y que problema solucionan
 - Pyramid of doom
 - Sintaxis de las promesas

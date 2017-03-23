@@ -1,15 +1,15 @@
-## React
+# React
 
-### Qué es React
+## Qué es React
 - Es una librería para crear interfaces. 
 - Esta basada en componentes
 
-### Instalación
+## Instalación
 - Tipear node en la consola y en el caso de no tenerlo descargar https://nodejs.org/en/download/
 - Instalar create-react-app: `npm install -g create-react-app`
 - Crear un proyecto y explicar la estructura
 
-### Virtual DOM
+## Virtual DOM
 - Que es el DOM? Document Object Model
 `document.querySelectorAll('*')`
 - En lugar de hacer las modificaciones manualmente con el vdom podemos decir de que forma queremos que las cosas esten y mediante un algoritmo calcular los cambios minimos que se deben realizar sobre el DOM real para alcanzar ese estado.
@@ -17,7 +17,7 @@
 - La mayoría de los nodos que es posible crear usando el DOM tienen su análogo ReactElement. 
 - A diferencia de los componentes que ya veremos los ReactElements no tienen un estado interno y tal como ocurre con los elementos del DOM su visualización esta determinada por las propiedades que recibe.
 
-### Como crear un componente
+## Como crear un componente
 - Las aplicaciones que usan react se encuentran basadas en componentes. 
 - De la misma forma que un documento html empieza con una etiqueta html, una aplicación de react comienza por un componente global y luego se pueden ir anidando dentro de este nuevos componentes.
 - Los componentes pueden ser vistos como funciones que reciben como parametro un estado y retornan algo listo para ser renderizado en la página.
@@ -46,17 +46,17 @@ export default class App extends Component {
   }
 }
 ```
-**Ejercicio/Práctica**
+### Ejercicio/Práctica
 Revisar con la clase la estructura de carpetas creada por la app create-react-app. Mostrar como cada componente es creado. Explicar importación y exportación en javascript.
 
-### State vs Props
+## State vs Props
 - La principal diferencia entre estos dos conceptos es que el estado es interno del componente mientras que las propiedades les son provistas desde afuera al componente. 
 - Otra diferencia es que mientras el estado es mutable las propiedades no.
 - Nunca debemos asignar propiedades dentro de un componente.
 - Nunca debemos cambiar el estado de un componente sin usar setState.
 - Explicar como pasar propiedades
 
-### JSX
+## JSX
 - Cada Elemento JSX es solo una forma distinta de escribir React.createElement.
 - El browser no sabe como interpretar JSX.
 - El acto de convertir JSX en javascript se llama transpilación.

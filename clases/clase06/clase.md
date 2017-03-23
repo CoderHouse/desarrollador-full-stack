@@ -1,4 +1,4 @@
-## Workshop React
+# Workshop React
 - A esta altura ya podemos sabemos como crear un componente en react y utilizarlo desde otro componente. 
 - También sabemos como crear componentes que muestren una lista de elementos.
 - Sabemos como obtener datos desde una url remota así como también subscribir a eventos que ocurren en nuestra aplicación.

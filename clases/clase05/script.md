@@ -1,6 +1,6 @@
-## React
+# React
 
-### Reconciliación
+## Reconciliación
 - Es el proceso de actualizar la UI para que concuerde con el estado actual de mi aplicación.
 - Cuando un componente cambia es marcado para ser actualizado junto con sus hijos. 
 - Se calculan las diferencias entre el VDOM tree previo y el VDOM tree actual y se generan una lista de updates para ser aplicados en el DOM real.
@@ -18,14 +18,14 @@ https://facebook.github.io/react/docs/dom-elements.html
 ```
 
 
-**Ejercicio**
+### Ejercicio 10
 - El cliente ahora me pide que los post ya no sean una lista fija sino que los usuarios puedan agregar nuevos. Para eso debemos agregar un formulario con una caja de texto para el título (input) y otra para la bajada (textarea).
 - Pero me solicita que cada vez que un usuario realiza un post, la caja de texto del titulo y la bajada queden en blanco y al mismo tiempo se haga foco sobre el título. Dice que sin eso no nos va a pagar.
 
-### Ciclo de vida
+## Ciclo de vida
 Los componentes de react tienen un ciclo de vida. 
 
-**Iniciales**
+### Iniciales
 Metodos que van a ser llamados antes y hasta que el componente esta dentro del DOM:
 
 ```javascript
@@ -35,7 +35,7 @@ render() // Cuando se renderiza el componente.
 componentDidMount() // Cuando el componente ya esta montado en el DOM.
 ```
 
-**Actualizacion**
+### Actualizacion
 Los siguientes van a ser llamados cuando cambie el estado o las propiedades.
 
 ```javascript
@@ -46,14 +46,14 @@ render() // Cuando se renderiza el componente.
 componentDidUpdate() // Cuando el componente se actualizó en el DOM.
 ```
 
-**Destrucción**
+### Destrucción
 Cuando un componente va a ser removido del DOM:
 
 ```javascript
 componentWillUnmount() // Cuando el componente se va a remover del DOM.
 ```
 
-### Ejercicio 10
+### Ejercicio 11
 - Ahora el cliente me dice que la lista no es más fija sino que va a darnos una url para consumir los elementos y que nosotros debemos tomar los elementos para mostrar inicialmente desde esa url.
 
 **Requerimientos**
@@ -68,13 +68,13 @@ request('http://localhost:3000/posts')
 });
 ```
 
-### Statefull vs Stateless components
+## Statefull vs Stateless components
 - Todos los componentes que vimos hasta el momento se llaman statefull components. Esto quiere decir que contienen un estado interno que cambia de acuerdo a la lógica implementada dentro del componente.
 - A diferencia de los anteriores los componentes stateless no tienen un estado interno sino que son renderizados utilizando solamente las propiedades que le son provistas.
 - Esto quiere decir que siempre que le pasemos las mismas propiedades a un componente stateless va a renderizar exactamente lo mismo en pantalla.
 - En cambio, los componentes statefull pueden (o no) mostrar distintos resultados en base al estado actual del componente.
 
-**Cómo crear un componente stateless**
+### Cómo crear un componente stateless
 
 ```javascript
 const Text = (props) => <p>{props.children}</p>;
@@ -82,7 +82,7 @@ const Text = (props) => <p>{props.children}</p>;
 
 - Cuando veamos redux vamos a ver a donde va a parar la lógica de mi aplicación.
 
-### Ejercicio 11
+### Ejercicio 12
 - El cliente nos solicita que en la pagina debe verse el avatar y el nombre del usuario actual por lo cual necesitamos crear un componente avatar. Nuestro arquitecto de software nos pide que sea un componente stateless ya que considera que no va a contener un estado sino que solo va a mostrar una imagen y un nombre.
 - El componente va a recibir como parametro el alias del usuario (alias) y una url para su imagen (imageURL).
 - El tamaño de la imagen debe fijarse a 50px por 50px.
