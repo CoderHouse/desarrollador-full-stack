@@ -55,6 +55,7 @@ Revisar con la clase la estructura de carpetas creada por la app create-react-ap
 - Nunca debemos asignar propiedades dentro de un componente.
 - Nunca debemos cambiar el estado de un componente sin usar setState.
 - Explicar como pasar propiedades
+- defaultProps y propsTypes
 
 ## JSX
 - Cada Elemento JSX es solo una forma distinta de escribir React.createElement.

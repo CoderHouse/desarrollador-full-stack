@@ -33,14 +33,11 @@ console.log(surname);
 console.log(window.surname);
 ```
 
+## Let y const
 
-## ES2015
-
-Let y const
-=================
 Let a diferencia de var es block scoped lo que significa que si está definida dentro de `{}` no puede ser referenciada desde fuera.
 
-### Ejemplo con let:
+### Ejemplo con let
 ```javascript
 
 // ERROR: "ReferenceError: name is not defined
@@ -59,7 +56,7 @@ if(true) {
 
 Igual que let, const tambien es block scoped. 
 
-### Ejemplo con const:
+### Ejemplo con const
 ```javascript
 
 // ERROR: "TypeError: Assignment to constant variable.
