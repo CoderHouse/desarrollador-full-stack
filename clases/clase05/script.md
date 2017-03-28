@@ -68,7 +68,7 @@ request('http://localhost:3000/posts')
 });
 ```
 
-## Statefull vs Stateless components
+## Stateful vs Stateless components
 - Todos los componentes que vimos hasta el momento se llaman statefull components. Esto quiere decir que contienen un estado interno que cambia de acuerdo a la lógica implementada dentro del componente.
 - A diferencia de los anteriores los componentes stateless no tienen un estado interno sino que son renderizados utilizando solamente las propiedades que le son provistas.
 - Esto quiere decir que siempre que le pasemos las mismas propiedades a un componente stateless va a renderizar exactamente lo mismo en pantalla.

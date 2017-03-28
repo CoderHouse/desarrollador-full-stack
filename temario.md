@@ -1,172 +1,54 @@
 # Temario
 
+### ES2015
+  * [Nivelación](./clases/clase01/script.md#nivelación)
+  * [Let y const](./clases/clase01/script.md#let-y-const)
+    * [Ejemplo con let](./clases/clase01/script.md#ejemplo-con-let)
+    * [Ejemplo con const](./clases/clase01/script.md#ejemplo-con-const)
+    * [Ejercicio 1](./clases/clase01/script.md#ejercicio-1)
+  * [Arrow functions](./clases/clase01/script.md#arrow-functions)
+    * [Sintaxis](./clases/clase01/script.md#sintaxis)
+    * [Casos de uso diferente sintaxis](./clases/clase01/script.md#casos-de-uso-diferente-sintaxis)
+    * [Como cambia this](./clases/clase01/script.md#como-cambia-this)
+    * [Ejercicio 2](./clases/clase01/script.md#ejercicio-2)
+  * [String Templates](./clases/clase01/script.md#string-templates)
+    * [Ejercicio 3](./clases/clase01/script.md#ejercicio-3)
 
-## JavaScript ES6
+### ES2015
+  * [Programación funcional](./clases/clase02/script.md#programación-funcional)
+    * [Ejercicio 4](./clases/clase02/script.md#ejercicio-4)
+  * [Array Methods](./clases/clase02/script.md#array-methods)
+    * [Ejercicio 5](./clases/clase02/script.md#ejercicio-5)
+  * [Clases](./clases/clase02/script.md#clases)
+    * [Ejercicio 6](./clases/clase02/script.md#ejercicio-6)
+  * [Promises](./clases/clase02/script.md#promises)
+    * [Ejercicio 7](./clases/clase02/script.md#ejercicio-7)
 
-* Const y let
- * Cuáles son las nuevas definiciones de variables y cuáles sus diferencias
-* Arrow functions
- * La nueva sintáxis para definir funciones y sus ventajas
-* Array methods
- * Los metodos nativos de los array
-* String Templates
- * Cómo podemos trabajar con strings de manera más sencilla
+### React
+  * [Qué es React](./clases/clase03/script.md#qué-es-react)
+  * [Instalación](./clases/clase03/script.md#instalación)
+  * [Virtual DOM](./clases/clase03/script.md#virtual-dom)
+  * [Como crear un componente](./clases/clase03/script.md#como-crear-un-componente)
+    * [Ejercicio/Práctica](./clases/clase03/script.md#ejercicio/práctica)
+  * [State vs Props](./clases/clase03/script.md#state-vs-props)
+  * [JSX](./clases/clase03/script.md#jsx)
+    * [Ejercicio 8](./clases/clase03/script.md#ejercicio-8)
 
-## JavaScript ES6
+### React
+  * [Listas y Claves](./clases/clase04/script.md#listas-y-claves)
+  * [Eventos](./clases/clase04/script.md#eventos)
+    * [Lista de los eventos más usados](./clases/clase04/script.md#lista-de-los-eventos-más-usados)
+    * [Ejercicio 9](./clases/clase04/script.md#ejercicio-9)
 
-* Programacion Funcional
-  * Conceptos basicos:
-    * Inmutabilidad de datos
-    * Funciones puras
-* Promises
- * fetch() y las ventajas de trabajar con promesas en lugar de callbacks
-* Clases
- * La implementación de ES6 para poder trabajar con clases y herencia
-
-## Node
-
-* definiciones
- * Qué es node? cómo funciona? Difrencias con otros lenguajes
-* npm
- * Qué es npm? npm install Otros comandos
-* package.json
- * Qué son las dependencies?
- * Qué es el versionado semantico?
- * Para qué sirven los scripts?
- * Otras partes de package.json
-    * main
-    * bin
-    * version
-* modules (require)
- * Comando require. Qué son los modules?
-
-## Tools
-
-* Babel
- * Qué es transpilar y para qué nos sirve?
-* Lint
- * Las ventajas de tener un código ordenado y coherente
-* Webpack
- * loader
- * plugins
- * Qué es webpack y para que sirve. Cual es la potencia de los loaders, y como extenderlo con plugins
-
-## React
-
-* Definiciones de react
- * Qué es React? a quien pertenece? su historia
-* Instalación
- * Cómo instalarlo con npm, cli y en proyectos de frontend
-* JSX
- * Qué es JSX? cuáles son sus ventajas?
-* Componentes
- * Qué es un componente? cómo se conforma?
-* State y props
- * Qué es el state de un componente? Y sus props? Cuál es la diferencia? defaultProps y propsTypes
-* Stateless y stateful
- * Diferentes tipos de componentes según si usan o no state
-
-## React
-
-* VirtualDom
- * Qué es el virtualDom?
-* Ciclo de vida
- * Cuál es el ciclo de vida de un componente de react
-* Eventos y refs
- * Cómo son los eventos en React
-
-## Flux y Redux
-
-* Flux
- * Qué es flux? Qué es redux? Cómo funciona?
-* Redux
-  * Store
-  * Acciones
-    * dispatch()
-    * suscribe()
-  * Reducer
-  * Containers
-
-## Redux
-* Reducers combinados
-* coneccion con React Router
-* ejemplos y practica
-
-## CSS y Routing
-
-* CSS
- * Diferentes tipos de implementación de CSS en componentes de React. * Inline * Radium * CSS Modules
-* Routing
- * React Router
-
-## Tools
-
-* heroku
- * Qué es heroku? Subir un proyecto a heroku
- * Instalar Papertrail
- * Buildpack de Webpack
-* Firebase
- * Qué es el servicio de firebase? Implementación
-
-## Workshop React (Parte 1)
-
-## Node
-
-* eventos
- * Que son los eventos en node? Creacion y manejo de eventos
-* files
- * Manejo de archivos en node
-* Lodash
- * Programacion funcional
-
-## Node
-
-* Async.js
- * Asincronismo controlado de manera funcional
-* streams
- * Qué es un stream? Para qué se usa? Manejo de streams
-* HTTP
- * Módulo HTTP. Cómo usarlo?
-
-## Express
-
-* Intro
- * Qué es express? ventajas sobre HTTP
-* routing
- * Routeo con Express
-* middleware
- * Qué es un middleware? Para qué se usa? Cómo configurarlo?
-
-## REST
-
-* API Rest
- * Definición de REST
-  * json-server
-  * Construccion de una api
-  * postman
-* Seguridad con Helmet.js
-
-## Workshop Node
-
-## Mongo
-
-* definiciones
- * Qué es NoSQL? Otras bases noSQL Diferencas con SQL
-* operaciones
- * Operaciones básicas de CRUD
-* moongose
- * Qué es? Para qué sive? Implementación
-* operaciones
- * Operaciones básicas con Mongoose
-
-## Workshop Mongo
-
-## Tools
-
-* heroku
- * Instalar MongoLab (gratis) e implementar
- * Variables de entorno
-
-## Proyecto Final (Parte 1)
-
-## Proyecto Final (Parte 2)
+### React
+  * [Reconciliación](./clases/clase05/script.md#reconciliación)
+  * [Referencias](./clases/clase05/script.md#referencias)
+    * [Ejercicio 10](./clases/clase05/script.md#ejercicio-10)
+  * [Ciclo de vida](./clases/clase05/script.md#ciclo-de-vida)
+    * [Iniciales](./clases/clase05/script.md#iniciales)
+    * [Actualizacion](./clases/clase05/script.md#actualizacion)
+    * [Destrucción](./clases/clase05/script.md#destrucción)
+    * [Ejercicio 11](./clases/clase05/script.md#ejercicio-11)
+  * [Stateful vs Stateless components](./clases/clase05/script.md#stateful-vs-stateless-components)
+    * [Cómo crear un componente stateless](./clases/clase05/script.md#cómo-crear-un-componente-stateless)
+    * [Ejercicio 12](./clases/clase05/script.md#ejercicio-12)
