@@ -51,7 +51,7 @@ function incrementAsync() {
 }
 ```
 
-### Ejercio integrador
+### Ejercio integrador 15
 - Modificar nuestra copia de reddit para que utilice la arquitectura de redux.
 
 ## React Router y CSS
@@ -95,7 +95,7 @@ Para crear un enlace a una ruta específica debemos utilizar el componente Link.
 <Link to="/" replace>Home</Link>
 ```
 
-### Ejercicio
+### Ejercicio 16
 - Crear una ruta para crear un nuevo post en nuestra aplicación. Para ello se deberá hacer que el componente PostBox quede asociado a la ruta `/add`.
 
 ## CSS Modules

@@ -5,7 +5,7 @@
 
 Hoy vamos a poner todos estos conocimientos en práctica
 
-### Ejercicio
+### Ejercicio 13
 A esta altura nuestro cliente se esta impacientando y quiere ver algo un poco más interesante en la pantalla. Nos esta reclamando lo siguiente:
 
 - Necesito que los usuarios puedan votar los posts

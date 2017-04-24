@@ -63,7 +63,7 @@ Object.assign({}, {title: 'This is a title'}, {body: 'this is a body'});
 ## Ejemplo de contador
 https://github.com/reactjs/redux/blob/master/examples/counter-vanilla/index.html
 
-## Ejercicio
+## Ejercicio 14
 - Utilizando como base el ejemplo del contador crear una calculadora que me permita: sumar, restar, multiplicar y dividir.
 - La calculador constará de un input para introducir un nuevo operando, 4 botones (multiplicar, dividir, sumar y restar) y un div donde se mostrará el resultado. 
 - Por ejemplo: el estado inicial es 0, introduzco el valor dos en el operando y presiono +, el estado pasa a ser 2. Luego coloco 3 y presiono x entonces el nuevo resultado es 6.
