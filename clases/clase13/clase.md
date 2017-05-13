@@ -29,7 +29,7 @@ Para manipular los recursos se reutilizan los verbos definidos en el protocolo H
 ### Interfaz uniforme
 Mientas que la restricción del interfaz uniforme es la más determinante y visible de las restricciones REST, es comúnmente la razón por la que no se cumplen completamente los principios y técnicas RESTful.
 
-Las interfaces uniformes:
+**Las interfaces uniformes:**
 
 - Identifican recursos
 - Manipulan recursos a través de representaciones
@@ -74,6 +74,11 @@ GET /comments?filter[post]=1 HTTP/1.1
 GET /comments?filter[title]=1 HTTP/1.1
 GET /comments?sort[title]=ASC HTTP/1.1
 ```
+
+### Códigos HTTP
+Es muy importante que utilicemos los códigos HTTP para indicar los distintos estados que puede retornar una petición. Por ejemplo: si una petición tuvo éxito debemos retornar 200. Si un recurso no existe debemos retornar 404.
+
+Para ver una lista completa pueden ingresar a: http://www.restapitutorial.com/httpstatuscodes.html
 
 ### Errores comunes
 - Añadir métodos a medida si los estándares no encajan (típico :D)

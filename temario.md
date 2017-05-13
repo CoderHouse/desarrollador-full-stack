@@ -140,5 +140,4 @@
   * [Middlewares](./clases/clase12/script.md#middlewares)
     * [Middlewares mas utilizados](./clases/clase12/script.md#middlewares-mas-utilizados)
     * [Como crear tu propio middlewares](./clases/clase12/script.md#como-crear-tu-propio-middlewares)
-  * [](./clases/clase12/script.md#)
     * [Ejercicio 21](./clases/clase12/script.md#ejercicio-21)
