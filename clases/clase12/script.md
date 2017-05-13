@@ -134,7 +134,6 @@ var express = require('express')
 var path = require('path')
 var serveStatic = require('serve-static')
 var app = express()
-app.use(serveStatic(path.join(__dirname, 'public-optimized')))
 app.use(serveStatic(path.join(__dirname, 'public')))
 app.listen(3000)
 ```
@@ -155,6 +154,7 @@ Para definir un nuevo middleware es muy simple. Debemos crear una función que r
 Una vez creada la funcion debemos pasarsela al metódo `use` para que la inserte en el ciclo request-response.
 
 ```javascript
+var express = require('express')
 var app = express()
 app.use(function (req, res, next) {
   console.log('Time:', Date.now())
@@ -168,13 +168,10 @@ La función `next` debe ejecutarse en el momento que todo el trabajo del middlew
 request -> middleware1 -> middleware2 -> ... -> response
 ```
 
-## 
-
 ### Ejercicio 21
 Construyamos nuestro propio JSON server. Yay!
 Qué debe hacer?
 - Leer un archivo json
 - Cada key del objeto json corresponde a un path en la url. En otras palabras `/comments` debería rutear a la key `comments` en el objeto json que estamos usando.
-- Debemos utilizar streams
 - Agregar la posibilidad de filtrar elementos según sus campos. Por ejemplo: obtener todos los comentarios cuyo autor sea igual a X.
 - Para el hogar: agregar paginación, ordenamiento. 

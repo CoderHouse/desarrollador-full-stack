@@ -87,7 +87,7 @@ Otro metodo muy utilizado es el toJSON que va a crear un objeto JSON a partir de
 var http = require("http");
 var server = http.createServer(function(request, response) {
   response.writeHead(200, {"Content-Type": "text/html"});
-  response.write("<!DOCTYPE "html">");
+  response.write("<!DOCTYPE html>");
   response.write("<html>");
   response.write("<head>");
   response.write("<title>Hello World Page</title>");
@@ -127,9 +127,6 @@ greetings.hello();
 ### Ejercicio 20
 - Crear un módulo con la función fileToString que dada una ruta a un archivo me devuelva un string.
 
-## Streams
-Los streams son una forma de transmitir datos. Para entenderlos repasemos el ejemplo para cargar un archivo y agregarle algunas modificaciones.
-
 ```javascript
 
 const fs = require('fs');
@@ -145,6 +142,10 @@ var server = http.createServer(function (req, res) {
 server.listen(8000);
 ```
 
+
+## Streams
+Los streams son una forma de transmitir datos. Para entenderlos repasemos el ejemplo para cargar un archivo y agregarle algunas modificaciones.
+
 Cada vez que un usuario acceda al sitio el archivo completo va a ser cargado en memoria. 
 
 Ahora bien, si el archivo es lo suficientemente grande o la memoria es limitada o la cantidad de request son elevadas, en algún momento, nuestra memoria se va a acabar.
@@ -156,7 +157,7 @@ Para eso son los streams. Veamos como cambiar el código para usar streams:
 ```javascript
 const fs = require('fs');
 const http = require('http');
-var server = http.createServer(function (req, res) {
+const server = http.createServer(function (req, res) {
     var stream = fs.createReadStream(__dirname + '/archivo.txt');
     stream.pipe(res);
 });
