@@ -1,4 +1,4 @@
-### Representational State Transfer | 
+### Representational State Transfer
 
 ### Que es un protocolo
 Un protocolo de red designa el conjunto de reglas que rigen el intercambio de información a través de una red de computadoras.
