@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link href="//cdn.muicss.com/mui-0.9.16/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    .hide {
+      display: none;
+    }
+  </style>
+  <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+</head>
+<body>
+  <div class="mui-container">
+    <button type="button" id="btnLogout" class="mui-btn mui-btn--raised mui-btn--primary hide">Logout</button>
+    <form id="form" class="mui-form">
+      <legend>Login</legend>
+      <div class="mui-textfield">
+        <input id="txtEmail" type="email" name="email" placeholder="Email">
+      </div>
+      <div class="mui-textfield">
+        <input id="txtPassword" type="password" name="password" placeholder="Password">
+      </div>
+      <button type="button" id="btnLogin" class="mui-btn mui-btn--raised">Login</button>
+      <button type="button" id="btnSignUp" class="mui-btn mui-btn--raised mui-btn--primary">SignUp</button>
+    </form>
+
+    <form class="mui-form">
+      <div class="mui-textfield">
+        <input id="txtTitle" type="text" name="title" placeholder="Title">
+      </div>
+      <div class="mui-textfield">
+        <input id="txtSummary" type="text" name="summary" placeholder="Summary">
+      </div>
+      <button type="button" id="btnAddPost" class="mui-btn mui-btn--raised mui-btn--primary">Add</button>
+    </form>
+    <ul id="postList">
+    </ul>
+  </div>
+
+
+
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

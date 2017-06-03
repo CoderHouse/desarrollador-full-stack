@@ -19,8 +19,8 @@ npm install express-generator -g
 ## Creando un servidor
 
 ```javascript
-var express = require('express')
-var app = express()
+let express = require('express')
+let app = express()
 
 app.get('/', function (req, res) {
   res.send('Hello World!')
