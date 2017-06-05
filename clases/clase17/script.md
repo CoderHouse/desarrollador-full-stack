@@ -41,15 +41,12 @@ Hay que asegurarse de tener un archivo gitignore para no incluir los node_module
 
 **.gitignore**
 ```
-# Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-# Bower dependency directory (https://bower.io/)
 bower_components
-# Dependency directories
 node_modules/
 jspm_packages/
 ```
