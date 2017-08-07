@@ -190,3 +190,16 @@ eslint --init
 ? Do you use React? Yes
 ? What format do you want your config file to be in? JSON
 ```
+
+## Ejercicio
+Configurar un proyecto desde 0 utilizando las herramientas que vimos anteriormente. El criterio de aceptación es el siguiente:
+- Transpilar código ES6
+- Transpilar código JSX
+- Cargar CSS
+- Inspeccionar el código usando ESLint con las de Airbnb
+- La estructura de directorios debe ser la siguiente:
+  + package.json
+  + webpack.config.js
+  + src
+    * index.js
+    * style.js

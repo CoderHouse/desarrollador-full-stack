@@ -1,12 +1,5 @@
 # React
 
-## Reconciliación
-- Es el proceso de actualizar la UI para que concuerde con el estado actual de mi aplicación.
-- Cuando un componente cambia es marcado para ser actualizado junto con sus hijos. 
-- Se calculan las diferencias entre el VDOM tree previo y el VDOM tree actual y se generan una lista de updates para ser aplicados en el DOM real.
-
-https://facebook.github.io/react/docs/dom-elements.html
-
 ## Referencias
 - Las referencias son una forma de identificar nodos del DOM reales, es decir, no virtuales.
 - Hay muy pocos casos en los que vale la pena utilizarlos: cuando estamos trabajando con librerias que no estan usan react (ej: un plugin de jQuery), para manejar el foco o la selección de texto de un input, 

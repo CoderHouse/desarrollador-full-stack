@@ -41,7 +41,6 @@
     * [Ejercicio 9](./clases/clase04/script.md#ejercicio-9)
 
 ### React
-  * [Reconciliación](./clases/clase05/script.md#reconciliación)
   * [Referencias](./clases/clase05/script.md#referencias)
     * [Ejercicio 10](./clases/clase05/script.md#ejercicio-10)
   * [Ciclo de vida](./clases/clase05/script.md#ciclo-de-vida)
@@ -66,21 +65,11 @@
   * [Ejemplo de contador](./clases/clase07/script.md#ejemplo-de-contador)
   * [Ejercicio 14](./clases/clase07/script.md#ejercicio-14)
 
-### Redux, CSS Modules y React Router
+### Redux
   * [Combinar reducers](./clases/clase08/script.md#combinar-reducers)
   * [Action Creators](./clases/clase08/script.md#action-creators)
   * [Redux Thunk](./clases/clase08/script.md#redux-thunk)
     * [Ejercio integrador 15](./clases/clase08/script.md#ejercio-integrador-15)
-  * [React Router y CSS](./clases/clase08/script.md#react-router-y-css)
-    * [Instalación](./clases/clase08/script.md#instalación)
-    * [Como crear rutas](./clases/clase08/script.md#como-crear-rutas)
-    * [Como enlazar a rutas](./clases/clase08/script.md#como-enlazar-a-rutas)
-    * [Ejercicio 16](./clases/clase08/script.md#ejercicio-16)
-  * [CSS Modules](./clases/clase08/script.md#css-modules)
-    * [Instalación](./clases/clase08/script.md#instalación)
-    * [Configuración](./clases/clase08/script.md#configuración)
-    * [Uso](./clases/clase08/script.md#uso)
-    * [Ejercicio](./clases/clase08/script.md#ejercicio)
 
 ### Build tools
   * [Babel](./clases/clase09/script.md#babel)
@@ -102,6 +91,7 @@
   * [Lint](./clases/clase09/script.md#lint)
     * [Instalación](./clases/clase09/script.md#instalación)
     * [Configuración](./clases/clase09/script.md#configuración)
+  * [Ejercicio](./clases/clase09/script.md#ejercicio)
 
 ### Redux Workshop - Trabajo final front-end
   * [Proyecto](./clases/clase10/script.md#proyecto)
