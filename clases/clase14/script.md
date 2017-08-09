@@ -15,3 +15,4 @@
 - Deben poder crearse listas
 - El usuario podrá crear, borrar, actualizar y ver tareas en cada lista
 - El usuario podrá filtrar las tareas de cada lista por aquellas que estan completadas, activas y todas.
+- TODO DEBE ESTAR ALMACENADO EN MEMORIA POR LO CUAL NO ES NECESARIA UNA BASE DE DATOS.

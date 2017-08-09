@@ -87,3 +87,5 @@ Para ver una lista completa pueden ingresar a: http://www.restapitutorial.com/ht
 ### Enlaces útiles
 - http://jsonapi.org/recommendations/
 
+### Ejercicio
+- Se necesita modelar una api RESTful para un sistema de e-commerce. Por dónde comenzarían? Que entidades son importantes?
