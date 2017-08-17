@@ -1,4 +1,4 @@
-### Workshow Node
+### Workshop Node
 - Vamos a crear una aplicación de lista de tareas
 - Separar la clase en dos grandes grupos: backend y front end.
 - Designar a los lideres de cada equipo que van a tener que conversar entre sí para definir como estos dos ambientes van a comunicarse.
