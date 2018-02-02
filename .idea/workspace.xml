@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b88c5e96-2890-4d44-b9c8-624c59488495" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/ejercicios/clase01/array_methods.js" afterPath="$PROJECT_DIR$/ejercicios/clase01/array_methods.js" />
+      <change beforePath="$PROJECT_DIR$/ejercicios/clase01/arrows.js" afterPath="$PROJECT_DIR$/ejercicios/clase01/arrows.js" />
+      <change beforePath="$PROJECT_DIR$/ejercicios/clase02/class.js" afterPath="$PROJECT_DIR$/ejercicios/clase02/class.js" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
+      <file leaf-file-name="script.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase01/script.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1101">
+                <caret line="131" column="28" lean-forward="false" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="37" />
+                <folding>
+                  <marker date="1517538248017" expanded="true" signature="200:391" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="329:357" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="724:743" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="792:809" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="792:829" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="1780:1793" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="1843:1869" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="1997:2195" ph="//..." />
+                  <marker date="1517538248017" expanded="true" signature="2099:2121" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2454:2483" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2517:2546" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2580:2593" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2580:2717" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2656:2716" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2786:3074" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2867:3054" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="2877:2997" ph="//..." />
+                  <marker date="1517538248017" expanded="true" signature="2877:2998" ph="//..." />
+                  <marker date="1517538248017" expanded="true" signature="3168:3391" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="3243:3371" ph="{...}" />
+                  <marker date="1517538248017" expanded="true" signature="3253:3314" ph="//..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase02/posts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase02/script.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1760">
+                <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+                <folding>
+                  <marker date="1517173835800" expanded="true" signature="872:990" ph="{...}" />
+                  <marker date="1517173835800" expanded="true" signature="1806:2144" ph="{...}" />
+                  <marker date="1517173835800" expanded="true" signature="1875:2050" ph="{...}" />
+                  <marker date="1517173835800" expanded="true" signature="1904:2046" ph="{...}" />
+                  <marker date="1517173835800" expanded="true" signature="1934:1975" ph="{...}" />
+                  <marker date="1517173835800" expanded="true" signature="1986:2040" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="soluciones.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase12/soluciones.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clases/clase03/script.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-1489">
+                <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                <folding>
+                  <marker date="1517173835806" expanded="true" signature="1886:2013" ph="{...}" />
+                  <marker date="1517173835806" expanded="true" signature="1901:2011" ph="{...}" />
+                  <marker date="1517173835806" expanded="true" signature="2132:2211" ph="..." />
+                  <marker date="1517173835806" expanded="true" signature="2255:2336" ph="{...}" />
+                  <marker date="1517173835806" expanded="true" signature="2268:2334" ph="{...}" />
+                  <marker date="1517173835806" expanded="true" signature="3412:3526" ph="{...}" />
+                  <marker date="1517173835806" expanded="true" signature="3427:3520" ph="{...}" />
+                  <marker date="1517173835806" expanded="true" signature="3647:3808" ph="{...}" />
+                  <marker date="1517173835806" expanded="true" signature="3662:3802" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="soluciones.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase02/soluciones.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1680">
+                <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="28" />
+                <folding>
+                  <marker date="1517173835802" expanded="true" signature="299:394" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="326:392" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="679:797" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1211:1296" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1250:1292" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1404:1619" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1447:1611" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1498:1540" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1546:1590" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1716:1823" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1752:1819" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1874:1954" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="1910:1950" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="2074:2169" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="2111:2165" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="2541:2870" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="2565:2751" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="2775:2815" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="2831:2867" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3136:3480" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3205:3380" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3234:3376" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3264:3305" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3316:3370" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3659:4116" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3707:4112" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3780:4006" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3811:4000" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3843:3923" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="3936:3992" ph="{...}" />
+                  <marker date="1517173835802" expanded="true" signature="4192:4203" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="soluciones.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase03/soluciones.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="400">
+                <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+                <folding>
+                  <marker date="1517173835808" expanded="true" signature="354:491" ph="{...}" />
+                  <marker date="1517173835808" expanded="true" signature="367:489" ph="{...}" />
+                  <marker date="1517173835808" expanded="true" signature="561:642" ph="..." />
+                  <marker date="1517173835808" expanded="true" signature="672:814" ph="{...}" />
+                  <marker date="1517173835808" expanded="true" signature="687:808" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="posts.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase04/posts.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase04/script.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding>
+                  <marker date="1517173835814" expanded="true" signature="194:405" ph="{...}" />
+                  <marker date="1517173835814" expanded="true" signature="207:403" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="soluciones.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clases/clase04/soluciones.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ejercicios/clase01/array_methods.js" />
+        <option value="$PROJECT_DIR$/ejercicios/clase01/arrows.js" />
+        <option value="$PROJECT_DIR$/ejercicios/clase02/class.js" />
+        <option value="$PROJECT_DIR$/clases/clase01/script.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2275" />
+    <option name="y" value="-2700" />
+    <option name="width" value="2426" />
+    <option name="height" value="1313" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="clases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="clases" type="462c0819:PsiDirectoryNode" />
+              <item name="clase01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="clases" type="462c0819:PsiDirectoryNode" />
+              <item name="clase02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="clases" type="462c0819:PsiDirectoryNode" />
+              <item name="clase03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="clases" type="462c0819:PsiDirectoryNode" />
+              <item name="clase04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="clases" type="462c0819:PsiDirectoryNode" />
+              <item name="clase12" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="desarrollador-full-stack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="desarrollador-full-stack" type="462c0819:PsiDirectoryNode" />
+              <item name="ejercicios" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b88c5e96-2890-4d44-b9c8-624c59488495" name="Default" comment="" />
+      <created>1517172360196</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517172360196</updated>
+      <workItem from="1517172361575" duration="555000" />
+      <workItem from="1517172975018" duration="330000" />
+      <workItem from="1517173333664" duration="128000" />
+      <workItem from="1517173891192" duration="3804000" />
+      <workItem from="1517522911383" duration="4923000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="9740000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2272" y="-2716" width="4832" height="2632" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19940978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2521739" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2521739" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19940978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase01/array_methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1960">
+          <caret line="49" column="2" lean-forward="true" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+          <folding>
+            <marker date="1517536686862" expanded="true" signature="21:80" ph="[...]" />
+            <marker date="1517536686862" expanded="true" signature="144:178" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="374:405" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="610:643" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="829:860" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="883:917" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="950:983" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase01/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="6840">
+            <caret line="171" column="180" lean-forward="false" selection-start-line="171" selection-start-column="180" selection-end-line="171" selection-end-column="180" />
+            <folding>
+              <marker date="1517538248017" expanded="true" signature="200:391" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="329:357" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="724:743" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="792:809" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="792:829" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="1780:1793" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="1843:1869" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="1997:2195" ph="//..." />
+              <marker date="1517538248017" expanded="true" signature="2099:2121" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2454:2483" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2517:2546" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2580:2593" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2580:2717" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2656:2716" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2786:3074" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2867:3054" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2877:2997" ph="//..." />
+              <marker date="1517538248017" expanded="true" signature="2877:2998" ph="//..." />
+              <marker date="1517538248017" expanded="true" signature="3168:3391" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="3243:3371" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="3253:3314" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/despues-del-curso.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/codigo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase19y20/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase01/arrows.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase01/array_methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1616">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <marker date="1517536686862" expanded="true" signature="21:80" ph="[...]" />
+            <marker date="1517536686862" expanded="true" signature="144:178" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="374:405" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="610:643" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="829:860" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="883:917" ph="{...}" />
+            <marker date="1517536686862" expanded="true" signature="950:983" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase02/class.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1018">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase02/promises_exercise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase03/clase.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase03/codigo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase04/clase.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase04/codigo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase05/clase.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase05/codigo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase02/codigo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ejercicios/clase02/clase.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1600">
+            <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase01/soluciones.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1320">
+            <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+            <folding>
+              <marker date="1517173835793" expanded="true" signature="1324:1474" ph="{...}" />
+              <marker date="1517173835793" expanded="true" signature="1443:1472" ph="{...}" />
+              <marker date="1517173835793" expanded="true" signature="1698:1931" ph="{...}" />
+              <marker date="1517173835793" expanded="true" signature="1817:1846" ph="{...}" />
+              <marker date="1517173835793" expanded="true" signature="1874:1929" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase12/middleware.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase12/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1517173835939" expanded="true" signature="418:448" ph="{...}" />
+              <marker date="1517173835939" expanded="true" signature="480:523" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase12/soluciones.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase04/posts.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase04/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1517173835814" expanded="true" signature="194:405" ph="{...}" />
+              <marker date="1517173835814" expanded="true" signature="207:403" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase04/soluciones.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase01/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1101">
+            <caret line="131" column="28" lean-forward="false" selection-start-line="131" selection-start-column="28" selection-end-line="131" selection-end-column="37" />
+            <folding>
+              <marker date="1517538248017" expanded="true" signature="200:391" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="329:357" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="724:743" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="792:809" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="792:829" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="1780:1793" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="1843:1869" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="1997:2195" ph="//..." />
+              <marker date="1517538248017" expanded="true" signature="2099:2121" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2454:2483" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2517:2546" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2580:2593" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2580:2717" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2656:2716" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2786:3074" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2867:3054" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="2877:2997" ph="//..." />
+              <marker date="1517538248017" expanded="true" signature="2877:2998" ph="//..." />
+              <marker date="1517538248017" expanded="true" signature="3168:3391" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="3243:3371" ph="{...}" />
+              <marker date="1517538248017" expanded="true" signature="3253:3314" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase02/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase02/soluciones.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1680">
+            <caret line="42" column="28" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="28" />
+            <folding>
+              <marker date="1517173835802" expanded="true" signature="299:394" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="326:392" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="679:797" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1211:1296" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1250:1292" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1404:1619" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1447:1611" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1498:1540" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1546:1590" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1716:1823" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1752:1819" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1874:1954" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="1910:1950" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="2074:2169" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="2111:2165" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="2541:2870" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="2565:2751" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="2775:2815" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="2831:2867" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3136:3480" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3205:3380" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3234:3376" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3264:3305" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3316:3370" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3659:4116" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3707:4112" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3780:4006" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3811:4000" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3843:3923" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="3936:3992" ph="{...}" />
+              <marker date="1517173835802" expanded="true" signature="4192:4203" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase02/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1760">
+            <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+            <folding>
+              <marker date="1517173835800" expanded="true" signature="872:990" ph="{...}" />
+              <marker date="1517173835800" expanded="true" signature="1806:2144" ph="{...}" />
+              <marker date="1517173835800" expanded="true" signature="1875:2050" ph="{...}" />
+              <marker date="1517173835800" expanded="true" signature="1904:2046" ph="{...}" />
+              <marker date="1517173835800" expanded="true" signature="1934:1975" ph="{...}" />
+              <marker date="1517173835800" expanded="true" signature="1986:2040" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase03/soluciones.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="400">
+            <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            <folding>
+              <marker date="1517173835808" expanded="true" signature="354:491" ph="{...}" />
+              <marker date="1517173835808" expanded="true" signature="367:489" ph="{...}" />
+              <marker date="1517173835808" expanded="true" signature="561:642" ph="..." />
+              <marker date="1517173835808" expanded="true" signature="672:814" ph="{...}" />
+              <marker date="1517173835808" expanded="true" signature="687:808" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clases/clase03/script.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-1489">
+            <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <folding>
+              <marker date="1517173835806" expanded="true" signature="1886:2013" ph="{...}" />
+              <marker date="1517173835806" expanded="true" signature="1901:2011" ph="{...}" />
+              <marker date="1517173835806" expanded="true" signature="2132:2211" ph="..." />
+              <marker date="1517173835806" expanded="true" signature="2255:2336" ph="{...}" />
+              <marker date="1517173835806" expanded="true" signature="2268:2334" ph="{...}" />
+              <marker date="1517173835806" expanded="true" signature="3412:3526" ph="{...}" />
+              <marker date="1517173835806" expanded="true" signature="3427:3520" ph="{...}" />
+              <marker date="1517173835806" expanded="true" signature="3647:3808" ph="{...}" />
+              <marker date="1517173835806" expanded="true" signature="3662:3802" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

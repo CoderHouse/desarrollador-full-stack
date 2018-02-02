@@ -1,0 +1,16 @@
+{
+  "name": "example-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mariano Carballal <marianocarballal@gmail.com> (http://twitter.com/topicus1)",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^1.4.0",
+    "sequelize": "^4.4.2"
+  }
+}
