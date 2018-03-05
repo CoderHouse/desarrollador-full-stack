@@ -1,0 +1,11 @@
+.avatar-box {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.avatar-img {
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}

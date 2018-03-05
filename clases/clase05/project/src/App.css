@@ -1,6 +1,5 @@
 html, body, #root {
     height: 100%;
-    overflow-y: hidden;
 }
 
 .App {
@@ -21,11 +20,10 @@ html, body, #root {
 
 .app-container {
     margin-top: 76px;
-    height: 100%;
     height: calc(100% - 75px);
 }
 
-.panel {
+.product-creation {
     position: fixed;
     display: flex;
     text-align: center;
@@ -37,14 +35,30 @@ html, body, #root {
     margin-bottom: 10px;
 }
 
+.product-creation button {
+    width: 100%;
+}
+
+.product-creation input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .products-container {
-    overflow-y: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     border-left: 2px solid green;
     margin-left: 375px;
     height: 100%;
+}
+
+.products-container h3 {
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.products-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .product-creation h3 {

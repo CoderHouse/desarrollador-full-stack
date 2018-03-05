@@ -12,8 +12,8 @@
 
 
 ### Ejercicio 10
-- El cliente ahora me pide que los post ya no sean una lista fija sino que los usuarios puedan agregar nuevos. Para eso debemos agregar un formulario con una caja de texto para el título (input) y otra para la bajada (textarea).
-- Pero me solicita que cada vez que un usuario realiza un post, la caja de texto del titulo y la bajada queden en blanco y al mismo tiempo se haga foco sobre el título. Dice que sin eso no nos va a pagar.
+- El cliente ahora me pide que los productos ya no sean una lista fija sino que los usuarios puedan agregar nuevos. Para eso debemos agregar un formulario con una caja de texto (input) para el título y para la descripcion. (dejemos de lado la imagen por ahora)
+- Pero me solicita que cada vez que un usuario crea un producto, la caja de texto del titulo y la descripcion queden en blanco y al mismo tiempo se haga foco sobre el título. Dice que sin eso no nos va a pagar.
 
 ## Ciclo de vida
 Los componentes de react tienen un ciclo de vida. 

@@ -1,7 +1,11 @@
 # Workshop React
+## Axios
+
+Utilizar axios como libreria http para realizar requests.
+
 ## Proyecto
 
-A esta altura ya podemos sabemos como crear un componente en react y utilizarlo desde otro componente. 
+A esta altura ya sabemos como crear un componente en react y utilizarlo desde otro componente. 
 
 También sabemos como crear componentes que muestren una lista de elementos.
 
@@ -10,8 +14,23 @@ Sabemos como obtener datos desde una url remota así como también subscribir a 
 Hoy vamos a poner todos estos conocimientos en práctica
 
 ## Ejercicio 13
-A esta altura nuestro cliente se esta impacientando y quiere ver algo un poco más interesante en la pantalla. Nos esta reclamando lo siguiente:
+Nuestro cliente se esta impacientando y quiere ver algo un poco más interesante en la pantalla. Nos esta reclamando lo siguiente:
 
-- Necesito que los usuarios puedan votar los posts
-- Necesito que los usuarios puedan eliminar los posts
-- Para el hogar me gustaria que los usuarios también puedan editar los posts que crearon ellos mismos.
+- Necesito poder ver la tarjeta del producto que voy a guardar mientras estoy modificando el titulo y la descripcion.
+- Necesito que los usuarios puedan agregar y eliminar productos en la base de datos local.
+
+## React Router Dom
+Vamos a instalar react-router-dom para empezar a tener multiples vistas en nuestra aplicacion!
+
+`npm install react-router-dom`
+
+Para que nuestra app sepa modificar el contenido dependiendo la ruta debemos wrappear nuesto componente <App> con el componente BrowserRouter
+
+`ReactDOM.render(
+     <BrowserRouter>
+         <App/>
+     </BrowserRouter>, document.getElementById('root'));`
+   
+Creamos una ruta para para mostrar el creador de producto de la siguiente manera:
+
+`<Route path="/" exact render={(props) => (<CreateProduct saveHandler={this.saveProduct} {...props} />)}/>`

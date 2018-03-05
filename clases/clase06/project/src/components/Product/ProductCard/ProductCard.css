@@ -7,6 +7,7 @@
     margin: 10px;
     transition: 0.3s;
     width: 250px;
+    height: 250px;
 }
 
 .ProductCardContainer {
@@ -19,7 +20,7 @@
 }
 
 .ProductCardImage {
-    width: 100px;
+    height: 100px;
     margin: auto;
 }
 

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import ProductCard from "./ProductCard/ProductCar";
+import ProductCard from "./ProductCard/ProductCard";
 
 class App extends Component {
 
@@ -23,22 +23,28 @@ class App extends Component {
     deleteProduct = (index) => {
         const products = [...this.state.products];
         products.splice(index, 1);
-        this.setState({ products })
+        this.setState({products})
     };
 
     render() {
         return (
             <div className="App">
-                {
-                    this.state.products.map((product, index) => (
-                        <ProductCard
-                            key={index}
-                            img={product.img}
-                            description={product.description}
-                            handleClick={() => this.deleteProduct(index)}
-                        />
-                    ))
-                }
+                <div className="app-header">
+                    <h2>Header</h2>
+                </div>
+                <div className="app-container">
+                    <div className="products-layout">
+                        {
+                            this.state.products.map((product, index) => (
+                                <ProductCard
+                                    key={index + 1}
+                                    img={product.img}
+                                    description={product.description}
+                                />
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
         );
     }
