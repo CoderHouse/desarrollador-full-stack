@@ -1,0 +1,24 @@
+.ProductCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s;
+    width: 250px;
+}
+
+.ProductCardContainer {
+    text-align: center;
+    padding: 2px 16px;
+}
+
+.ProductCardTitleTitle {
+    text-align: center;
+}
+
+.ProductCardImage {
+    width: 100px;
+    margin: auto;
+}
