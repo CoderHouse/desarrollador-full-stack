@@ -1,205 +1,99 @@
-# Build tools
+# Higher-Order Components
+Un hoc es una funcion que recibe como parametro un componente y retorna otro componente.
 
-## Babel
-Babel es un transpilador, una herramienta que transforma el código escrito un lenguaje y lo convierte en otro. Nos permite utilizar las últimas características del estandar ECMAScript sin importar el soporte presente en cada browser.
+Se utiliza para agregarle funcionalidad al componente que recibimos como parametro.
+```
+hoc(<App/>)
+```
+## withErrorHandler
+Una app web puede fallar por muchos motivos (falta de internet, bug en el sistema)
+por ello es que tenemos que manejar los posibles errores.
 
-Aún cuando es posible instalar babel globalmente se recomienda hacerlo dentro del proyecto que estemos creando. Para ello debemos realizar los siguientes pasos:
+Para eso vamos a crear un hoc que se encargue de eso! 
 
-### Instalación
+En este caso withErrorHandler se va a encargar de interceptar los requests axios y lanzar un error 
+si el request falla.
 
 ```
-npm install --save-dev babel-cli
-```
+const withErrorHandler = ( WrappedComponent, axios ) => {
+    return class extends Component {
+        state = {
+            error: null
+        };
 
-Este comando va a instalar babel dentro de mi proyecto.
+        componentWillMount () {
+            this.reqInterceptor = axios.interceptors.request.use( req => {
+                this.setState( { error: null } );
+                return req;
+            } );
+            this.resInterceptor = axios.interceptors.response.use( res => res, error => {
+                this.setState( { error: error } );
+            } );
+        }
 
-### Uso
-Dado que al instalarlo localmente el archivo binario que permite ejecutar el comando queda situado dentro de la carpeta de dependencias (node_modules) y que resulta incomodo tener que estar escribiendo la ruta hacia ese archivo vamos a aprender como definir scripts para nuestro proyecto y al mismo tiempo realizar el setup de babel.
+        componentWillUnmount () {
+            axios.interceptors.request.eject( this.reqInterceptor );
+            axios.interceptors.response.eject( this.resInterceptor );
+        }
 
-Abrimos el archivo package.json que se encuentra en la raíz de nuestro proyecto y agregamos la key scripts como en el siguiente ejemplo:
+        errorConfirmedHandler = () => {
+            this.setState( { error: null } );
+        }
 
-```javascript
- {
-    "name": "my-project",
-    "version": "1.0.0",
-    "scripts": {
-      "build": "babel src -d lib"
-    },
-    "devDependencies": {
-      "babel-cli": "^6.0.0"
+        render () {
+            const error = (
+                <div>
+                    {this.state.error ? this.state.error.message : ''}
+                    <button onClick={this.errorConfirmedHandler}>Clear</button>
+                </div>
+            )
+            const component = <WrappedComponent {...this.props} />;
+            return this.state.error ? error : component;
+        }
     }
-  }
+}
 ```
 
-Como pueden ver en el ejemplo, dentro de la key scripts se ve un comando build que al ejecutarlo va a ejecutar babel tomando todos los archivos que esten dentro de la carpeta src y volcando el resultado en la carpeta lib.
+## Virtual
+Ya que JSX tiene que retornar un único componente, muchas veces debemos embolver nuestro retorno en 
+un div. Pero hay veces que no podemos hacerlo porque camibia el layout de nuestra app, para ello
+vamos a crear un hoc llamado Virtual.
 
-Para correrlo se debe ejecutar:
+```
+const virtual = (props) => props.children;
+```
+
+## Como buildear nuestra app
+Gracias a que para crear nuestra app utilizamos la libreria create-react-app tenemos a nuestra 
+dispocicion un comando para buildear nuestra app. 
+
 ```
 npm run build
 ```
-
-Veamos un poco como funciona babel utilizando la repl(Read–eval–print loop) de babel:
-
+ó
 ```
-http://babeljs.io/repl/
+react-scripts build
 ```
 
-### .babelrc
-A grandes rasgos babel hace lo que cualquier otro compilador: procesa, transforma y genera nuevo codigo.
+Esto lo que creara es una carpeta build con nuestra app optimizada y funcionando!
 
-Para configurar las tranformaciones que queremos aplicar a nuestro código tendremos que crear un archivo en la raíz de nuestro proyecto llamado .babelrc.
+## Como deployear nuestra app
+Una vez que tenemos nuestra app buildeada solo debemos publicarla en algun servidor y servir el index.html que se 
+encuentra en la carpeta build.
+Eso es mas que suficiente para que nuestra app funcione!! 
 
-Pero si no definimos ninguna configración vamos a ver que el código compilado no presenta cambios respecto del código original. 
-
-#### Plugins
-Los plugins nos permiten configurar de forma muy granular cuales son las features que queremos transformar. Así por ejemplo si deseamos transformar las arrow functions para ser soportadas en todos los navegadores podemos agregar el plugin es2015-arrow-functions a la lista:
-
+## Como customizar nuestro build proces
+Nuestra app creada por create-react-app de fondo utiliza WEBPACK. Nosotros podemos customizar el proceso webpack solamente
+ejectando el archivo de confuguración que el utiliza.
+  
 ```
-"plugins": ["es2015-arrow-functions"]
+npm run eject 
 ```
-
-#### Presets
-Normalmente queremos contar con todas las features del lenguaje incluídas para determinado año por eso para la mayoría de los casos conviene utilizar presets que son simplemente un conjunto de plugins.
-
-Hay veces que queremos agregar una carácteristica que no esta presente en el preset que tenemos establecido pero tampoco queremos incorporar un preset completo. En esos casos podemos definir un preset y agregar los plugins extra que consideremos. 
-
-Para instalar el preset que vamos a utilizar en esta clase:
+ó
 ```
-npm install --save-dev babel-preset-es2015
+react-scripts eject 
 ```
 
-#### Polyfill
-Un Polyfill código que te permite trabajar con una tecnología que no soporta el navegador de forma nativa. A diferencia de las transformaciones que ya vimos, el código no cambia, solo se agrega una pieza de código que cumple con la API de su contraparte nativa. 
 
-Por ejemplo, las promesas pueden ser implementadas utilizando ES5 por lo tanto no es necesario una transformación. 
-
-#### Runtime transform
-El inconveniente de usar polyfills es que si la contraparte nativa es actualizada, un desarrollador puede interpretar que esta usando la version nativa cuando en realidad, dependiendo del navegador, puede estar usando un polyfill. 
-
-El runtime transform a diferencia del polyfill transforma toda implementacion que utilice features no compatible con la version de javascript que queremos utilizar para que utilicen una version provista por babel. 
-
-Usar el runtime es lo más recomendable cuando queremos crear librerías que puedan utilizar terceros.
-
-### Ejercicio 17
-- Realizar el setup de babel para compilar codigo es2015 usando un script de npm.
-
-## Webpack
-Nos permite crear paquetes con todos los assets necesarios para nuestra aplicación. 
-
-### Entry point
-Es el punto de inicio de nuestra aplicación. A partir de este archivo webpack va a saber que es lo que debe agregarse al bundle final.
-
-**Ejemplo de un entry point simple:**
-```
-entry: './index.js',
-```
-
-**Ejemplo de un entry point multiple:**
-```
-entry: ["./app/entry1", "./app/entry2"],
-```
-
-**Ejemplo de un entry point multiple con nombres**
-```
-entry: {
-  a: "./app/entry-a",
-  b: ["./app/entry-b1", "./app/entry-b2"]
-},
-```
-
-### Output
-Las opciones del output nos permiten configurar la forma en la que los archivos compilados van a ser grabados. Por ejemplo: la carpeta y archivo de destino, el nombre del archivo de source map.
-
-### Loaders
-Esta es una de las configuraciones más importantes de webpack. Dentro vamos a especificar que loader va a ser utilizado para cada tipo de archivo en particular. 
-
-Por ejemplo los archivos css no son javascript por lo cual vamos a necesitar un loader que me permita importarlos como si de un archivo js se tratase.
-
-Si nuestro archivo contiene jsx (como por ejemplo un componente de react) entonces vamos a necesitar un loader que se encargue de manejar este tipo de archivos.
-
-Acá pueden ver la lista completa de loaders disponibles https://webpack.github.io/docs/list-of-loaders.html
-
-### Configuración de los loaders
-
-```
-module: {
-    rules: [
-        {
-            test: /\.js$/,
-            exclude: [/node_modules/],
-            use: [{
-                loader: 'babel-loader',
-                options: { presets: ['es2015'] },
-            }],
-        },
-    ],
-},
-```
-
-Todo las configuraciones que se encuentran dentro de la key module van a determinar como los diferentes tipos de modulos van a compilarse. 
-
-Vamos a hacer foco en la configuración más importante: rules. 
-
-Las rules nos permiten indicar que loader utilizar para cada tipo de archivo. Todos los archivos que pasen la expresión regular definida en test van a utilizar el loader (o los) definido dentro de use.
-
-En el caso del ejemplo podemos ver como babel-loader va a ser utilizado para todos los archivos terminados .js. También podemos observar que una serie de opciones son pasadas a dicho loader para que funcione correctamente. En este caso los presets correspondientes.
-
-Si pasamos la configuracion en el loader no es necesario utilizar el .babelrc ya que cumplen el mismo objetivo.
-
-### Plugins
-Los plugins permiten customizar el proceso de build. Por ejemplo podemos utilizar el plugin UglifyJsPlugin que va a permitirnos minificar el resultado de nuestro build.
-
-Algunos de los más importantes son CommonsChunkPlugin, UglifyJsPlugin, ExtractTextWebpackPlugin, DefinePlugin. 
-
-Cada plugin necesita ser instalado por separado utilizando npm o yarn.
-
-Por ejemplo:
-
-```
-npm install --save-dev extract-text-webpack-plugin
-```
-
-### Resolve
-Resolve nos permite ahorrarnos el tener que tipear path relativos durante la importación de un modulo. 
-
-## Lint
-Los linters son tools que nos ayudan a estructurar nuestro código de forma consistente siguiendo una serie de reglas que son definidas desde un archivo de configuración.
-
-También nos ayudan a evitar los errores más comunes que podemos cometer por no seguir las mejores prácticas de programación.
-
-Para javascript existe uno llamado eslint.
-
-### Instalación
-```
-npm install -g eslint
-npm install eslint --save-dev
-```
-
-### Configuración
-De la misma forma que configuramos el .babelrc para las configuraciones del transpilador, aquí vamos a necesitar un archivo `.eslintrc` que contenga todas las configuraciones del linter.
-
-Por suerte eslint ya viene con una serie de configuraciones por defecto y podemos aprovechar las guías de estilos más populares como la de airbnb o google.
-
-Para crear la configuración debemos ejecutar:
-
-```
-eslint --init
-
-? How would you like to configure ESLint? Use a popular style guide
-? Which style guide do you want to follow? Airbnb
-? Do you use React? Yes
-? What format do you want your config file to be in? JSON
-```
-
-## Ejercicio
-Configurar un proyecto desde 0 utilizando las herramientas que vimos anteriormente. El criterio de aceptación es el siguiente:
-- Transpilar código ES6
-- Transpilar código JSX
-- Cargar CSS
-- Inspeccionar el código usando ESLint con las de Airbnb
-- La estructura de directorios debe ser la siguiente:
-  + package.json
-  + webpack.config.js
-  + src
-    * index.js
-    * style.js
+### Ejercio integrador 16
+- Modifica nuestra app y maneja errores!.

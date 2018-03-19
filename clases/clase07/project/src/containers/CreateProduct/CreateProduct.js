@@ -28,8 +28,6 @@ class CreateProduct extends Component {
         this.titleInput.value = '';
         this.descriptionInput.value = '';
         this.titleInput.focus();
-
-
     };
 
     titleChanged = (el) => {

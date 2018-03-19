@@ -1,20 +1,24 @@
 # Redux Workshop - Trabajo final front-end
 
-Vamos a crear una aplicación front-end utilizando y combinando todas las herramientas que vimos hasta el momento.
+Vamos a agregarle funcionalidad a nuestro proyecto para hacerlo mas interesante!.
 
-Para este proyecto vamos a arrancar desde cero sin copiar y pegar desde ejemplos anteriores.
-
-## Proyecto
-- Reddit:
-    + Listar posts ordenados según criterio
-    + Criterios para ordenar: más nuevos o más votados
-    + Los posts se pueden editar entrando a la url /posts/:id/edit
-    + Los posts se pueden agregar entrando a la url /posts/add
-    + Los posts pueden votarse
-    + Los posts permiten comentarios y podemos verlos entrando a /posts/:id/comments
-
+## Features
+- Authentication:
+    + Crearemos una vista de login en la que solo agregaremos el nombre del usuario
+    y lo escribiremos en el header.
+    + Crearemos un boton para cerrar session.
+    + La vista de productos solo se mostrara si el usuario esta logueado.
+- User Experience:
+    + Cuando hagamos click en el boton de borrar producto, transformaremos el contenido de 
+    la tarjeta en un loading mientras que el contenido se este borrando.
+    + Cuando agreguemos un nuevo producto haremos lo mismo mientras que el contenido se este guardando.
+    + A la hora de cargar la lista de productos agregaremos un loading mientras que la lista de productos se este cargando.    
+- Extra (si no llegas en clases, para hacer en casa!):
+    + Haremos que se pueda subir una imagen de producto en el formulario de creación!
+     
 ## Condiciones
 - Si hay alguna duda primero internet, luego un compañero y por último el profesor
 - Concentrarse en la funcionalidad y no en la estética
 - No copiar y pegar de ejercicios previos
 
+DEMO: https://full-stack-react.eugeniovaleiras.com/app

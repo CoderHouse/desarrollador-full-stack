@@ -88,4 +88,7 @@ Para ver una lista completa pueden ingresar a: http://www.restapitutorial.com/ht
 - http://jsonapi.org/recommendations/
 
 ### Ejercicio
-- Se necesita modelar una api RESTful para un sistema de e-commerce. Por dónde comenzarían? Que entidades son importantes?
+- Modificar nuestra API (fake json-server):
+    + Poder fitrar nuestro endpoint GET /:collection?filter[parma]=value
+    + Retornar el Content-Location Header en nuestro POST /:collection  
+    + Asegurarnos que todos los requests devuelvan el status correcto.

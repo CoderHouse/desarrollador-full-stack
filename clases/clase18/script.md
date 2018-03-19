@@ -40,3 +40,5 @@ Partiendo de la base del ejemplo de autenticación debemos agregar la siguiente 
 ```
 let database = firebase.database();
 ```
+## Ejercicio
+Agregar firebase auth a nuestra app react!! pero seguir utilizando la base de datos de nuestro back.

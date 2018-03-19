@@ -1,0 +1,73 @@
+html, body, #root {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app-header {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #fafafb;
+    border-bottom: 1px solid green;
+}
+
+.app-container {
+    margin-top: 76px;
+    height: 100%;
+    height: calc(100% - 75px);
+}
+
+.panel {
+    position: fixed;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.products-container {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-left: 2px solid green;
+    margin-left: 375px;
+    height: 100%;
+}
+
+.product-creation h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 1px 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+button.danger {
+    background-color: #e12622;
+    color: white;
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 1px 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
