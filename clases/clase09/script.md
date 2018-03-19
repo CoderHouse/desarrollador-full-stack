@@ -96,4 +96,4 @@ react-scripts eject
 
 
 ### Ejercio integrador 16
-- Modifica nuestra app y maneja errores!.
+- Modifica nuestra app para maneja errores!.

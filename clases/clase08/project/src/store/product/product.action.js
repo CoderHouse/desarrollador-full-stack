@@ -20,8 +20,8 @@ export const setProducts = (products) => {
 export const addProduct = (product) => {
     return dispatch => {
         axios.post('', product)
-            .then(_ => {
-                dispatch({type: productTypes.ADD_PRODUCT, payload: product});
+            .then(response => {
+                dispatch({type: productTypes.ADD_PRODUCT, payload: response.data});
             });
     }
 };

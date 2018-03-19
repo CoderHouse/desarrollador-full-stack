@@ -67,6 +67,7 @@ class EditProduct extends Component {
                     title={title || ''}
                     img={img}
                     description={description}
+                    preview
                 />
                 <button onClick={this.handleEditClick}>Edit</button>
             </div>

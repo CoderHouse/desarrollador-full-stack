@@ -52,4 +52,5 @@ function incrementAsync() {
 ```
 
 ### Ejercio integrador 15
-- Modificar nuestra copia de reddit para que utilice la arquitectura de redux.
+- Modificar nuestra app para permitir la combinacion de reducers.
+- Agregar llamadas asincronicas al json-server para guardar/editar/elimiar productos.

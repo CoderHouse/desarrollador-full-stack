@@ -66,6 +66,6 @@ class Toggle extends React.Component {
 ```
 
 ### Ejercicio 9
-- Mostrar un solo post en la pantalla no tiene mucho sentido. El cliente me pide si en vez de mostrar 1 solo post podemos mostrar una lista que el nos va a enviar por mail.
-- Se pide entonces crear un componente PostList que utilice el componente Post creado en la clase anterior y que reciba por propiedad una lista (array) de posts. Este componente se va a encargar de recorrer el array y convertir cada item del array en un componente Post que va a ser mostrado dentro de la lista.
+- Mostrar un solo producto en la pantalla no tiene mucho sentido. El cliente me pide si en vez de mostrar 1 solo post podemos mostrar una lista que el nos va a enviar por mail.
+- Se pide entonces listar los productos que utilice el componente ProductCard creado en la clase anterior.
 
