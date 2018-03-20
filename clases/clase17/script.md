@@ -93,16 +93,9 @@ Como vimos deployar una aplicación usando heroku es una tarea bastante simple.
 Lo que se necesita ahora es poder deployar la api desarrollada en las clases anteriores a heroku.
 
 **Vamos a complicarla un poco:**
-Heroku no ofrece un servicio de mongo gratuito sin antes agregar una tarjeta de crédito. 
+Heroku no ofrece un servicio de sql gratuita sin antes agregar una tarjeta de crédito. 
 
-Pero nos enteramos que hay una gente muy copada que se llama https://mlab.com y que nos permite utilizar un sandbox (un espacio para hacer pruebas) gratuito.
-
-**Para habilitar el servicio:**
-- Nos hacemos una cuenta
-- Una vez logueados clickeamos en create new para crear una nueva base
-- Elegimos single node
-- Y luego en las opciones elegimos sandbox
-- Finalmente debemos crear un usuario para poder acceder a la base
+Pero nos enteramos que hay una gente muy copada que se llama ClearDB MySQL y que nos permite utilizar un sandbox (un espacio para hacer pruebas) gratuito.
 
 **EL EQUIPO QUE PRIMERO LOGRE HACER FUNCIONAR LA API DE HEROKU CON LA BASE DE DATOS ES EL GANADOR**
 
