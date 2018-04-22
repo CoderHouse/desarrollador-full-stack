@@ -16,8 +16,8 @@ Hoy vamos a poner todos estos conocimientos en práctica
 ## Ejercicio 13
 Nuestro cliente se esta impacientando y quiere ver algo un poco más interesante en la pantalla. Nos esta reclamando lo siguiente:
 
-- Necesito poder ver la tarjeta del producto que voy a guardar mientras estoy modificando el titulo y la descripcion.
-- Necesito que los usuarios puedan agregar y eliminar productos en la base de datos local.
+- Necesito poder ver la tarjeta del item que voy a guardar mientras estoy modificando el titulo y la descripcion.
+- Necesito que los usuarios puedan agregar y eliminar items en la base de datos local.
 
 ## React Router Dom
 Vamos a instalar react-router-dom para empezar a tener multiples vistas en nuestra aplicacion!
@@ -31,6 +31,6 @@ Para que nuestra app sepa modificar el contenido dependiendo la ruta debemos wra
          <App/>
      </BrowserRouter>, document.getElementById('root'));`
    
-Creamos una ruta para para mostrar el creador de producto de la siguiente manera:
+Creamos una ruta para para mostrar el creador de item de la siguiente manera:
 
-`<Route path="/" exact render={(props) => (<CreateProduct saveHandler={this.saveProduct} {...props} />)}/>`
+`<Route path="/" exact render={(props) => (<CreateItem saveHandler={this.saveItem} {...props} />)}/>`

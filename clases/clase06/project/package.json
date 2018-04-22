@@ -11,7 +11,7 @@
     "react-scripts": "1.1.1"
   },
   "scripts": {
-    "start": "concurrently --kill-others \"react-scripts start\" \"json-server --watch products.json --port 4000\"",
+    "start": "concurrently --kill-others \"react-scripts start\" \"json-server --watch todos.json --port 4000\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

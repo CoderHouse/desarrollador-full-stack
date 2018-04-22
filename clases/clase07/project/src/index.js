@@ -8,11 +8,11 @@ import './index.css';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import productReducer from './store/product/product.reducer'
+import itemReducer from './store/Item/Item.reducer'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const store = createStore(productReducer, composeEnhancers());
+const store = createStore(itemReducer, composeEnhancers());
 
 const app = (
     <Provider store={store}>

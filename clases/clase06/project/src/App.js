@@ -3,16 +3,16 @@ import {Route, Switch} from 'react-router-dom';
 
 import './App.css';
 
-import ProductCard from './components/Product/ProductCard/ProductCard';
-import CreateProduct from './containers/CreateProduct/CreateProduct';
+import ItemCard from './components/Item/ItemCard/ItemCard';
+import CreateItem from './containers/CreateItem/CreateItem';
 import Avatar from './components/Avatar/Avatar';
 
-import axios from "./axios-products";
+import axios from "./axios-toDos";
 
 class App extends Component {
 
     state = {
-        products: [],
+        toDos: [],
         title: '',
         description: ''
     };
@@ -22,24 +22,24 @@ class App extends Component {
         super();
 
         axios.get('')
-            .then(products => {
-                this.setState({products: products.data});
+            .then(toDos => {
+                this.setState({toDos: toDos.data});
             });
     }
 
-    deleteProduct = (product) => {
-        axios.delete(`/${product.id}`)
+    deleteItem = (item) => {
+        axios.delete(`/${item.id}`)
             .then(_ => {
-                this.setState({products: this.state.products.filter(prod => product.id !== prod.id)})
+                this.setState({toDos: this.state.toDos.filter(prod => item.id !== prod.id)})
             });
     };
 
-    saveProduct = (newProduct) => {
-        axios.post('', newProduct)
-            .then(product => {
-                const products = [...this.state.products, product.data];
+    saveItem = (newItem) => {
+        axios.post('', newItem)
+            .then(item => {
+                const toDos = [...this.state.toDos, item.data];
                 this.setState({
-                    products
+                    toDos
                 });
             });
     };
@@ -48,7 +48,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="app-header">
-                    <Avatar url={this.avatarPlaceholder} alias="Eugenio Valeiras"></Avatar>
+                    <Avatar url={this.avatarPlaceholder} alias="USERNAME" />
                 </div>
                 <div className="app-container">
                     <div className="panel">
@@ -56,18 +56,17 @@ class App extends Component {
                         <Route
                             path="/"
                             exact
-                            render={(props) => (<CreateProduct saveHandler={this.saveProduct} {...props} />)}/>
+                            render={(props) => (<CreateItem saveHandler={this.saveItem} {...props} />)}/>
                     </Switch>
                     </div>
-                    <div className="products-container">
+                    <div className="toDos-container">
                         {
-                            this.state.products.map((product, index) => (
-                                <ProductCard
+                            this.state.toDos.map((item, index) => (
+                                <ItemCard
                                     key={index + 1}
-                                    title={product.title}
-                                    img={product.img}
-                                    description={product.description}
-                                    handleClick={() => this.deleteProduct(product)}
+                                    title={item.title}
+                                    description={item.description}
+                                    handleClick={() => this.deleteItem(item)}
                                 />
                             ))
                         }

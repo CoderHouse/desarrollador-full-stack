@@ -37,7 +37,7 @@ html, body, #root {
     margin-bottom: 10px;
 }
 
-.products-container {
+.toDos-container {
     overflow-y: auto;
     display: flex;
     flex-direction: row;
@@ -47,7 +47,7 @@ html, body, #root {
     height: 100%;
 }
 
-.product-creation h3 {
+.item-creation h3 {
     text-align: center;
     text-decoration: underline;
 }

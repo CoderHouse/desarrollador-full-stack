@@ -1,5 +1,5 @@
 ### Workshop Node
-- Vamos a crear una aplicación de lista de tareas
+- Vamos a crear la To-Do V2.
 - Separar la clase en dos grandes grupos: backend y front end.
 - Designar a los lideres de cada equipo que van a tener que conversar entre sí para definir como estos dos ambientes van a comunicarse.
 
@@ -9,7 +9,7 @@
 - Los lideres deben dialogar para definir como va a ser la integración cliente-servidor
 
 ### Criterio de aceptación
-- El usuario podrá crear listas
+- El usuario podrá crear listas de tareas.
 - Las listas deben ser mostradas en la pagina principal con un breve resumen de cada tarea.
 - Las listas deben poder eliminarse
 - Deben poder crearse listas

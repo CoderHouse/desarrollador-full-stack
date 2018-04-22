@@ -13,10 +13,10 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "production": {
+  "itemion": {
     "username": "root",
     "password": null,
-    "database": "database_production",
+    "database": "database_itemion",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

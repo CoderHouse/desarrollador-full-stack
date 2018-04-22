@@ -2,7 +2,7 @@ const fs = require('fs');
 const http = require('http');
 const os = require('os');
 
-const PORT = 8000;
+const PORT = 3000;
 //WRONG
 // const file = fs.readFileSync('archivo.txt');
 // console.log(file.toString());

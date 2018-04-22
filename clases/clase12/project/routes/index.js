@@ -13,7 +13,7 @@ const guidGenerator = () => {
 /* GET home page. */
 router.get('/:collection', (req, res) => {
     const collection = req.params.collection;
-    const list = db[collection]
+    const list = db[collection];
     res.json({Success: true, data: list})
 });
 

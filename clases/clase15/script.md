@@ -64,7 +64,7 @@ y esto debería imprimir por pantalla la versión de MySQL que se encuentra inst
 ### Instalación Workbench
 Para la mayoría de los ejercicios vamos a utilizar MySQL workbench el cual es un IDE que nos permitirá gestionar nuestra base de datos de forma más amigable.
 
-Descargar el instalador desde la url https://www.mysql.com/products/workbench/ y seguir los pasos para la instalación correspondientes al sistema operativo.
+Descargar el instalador desde la url https://www.mysql.com/toDos/workbench/ y seguir los pasos para la instalación correspondientes al sistema operativo.
 
 - Explicar brevemente a los alumnos como esta conformado el IDE
 - Mostrar como importar una base de datos (http://downloads.mysql.com/docs/sakila-db.zip)
@@ -150,7 +150,7 @@ En las relaciones de uno a muchos cada registro de una tabla A, a la que llamare
 **Ejemplo:** Usuario tiene muchas compras
 
 #### Muchos a Muchos
-Una relación de muchos a muchos se produce cuando varios registros de una tabla se asocian a varios registros de otra tabla. Por ejemplo, existe una relación de muchos a muchos entre los clientes y los productos: los clientes pueden comprar varios productos y los productos pueden ser comprados por muchos clientes.
+Una relación de muchos a muchos se produce cuando varios registros de una tabla se asocian a varios registros de otra tabla. Por ejemplo, existe una relación de muchos a muchos entre los clientes y los items: los clientes pueden comprar varios itemos y los itemos pueden ser comprados por muchos clientes.
 **Ejemplo**: Un alumno participa en varias materias y a su vez una materia tiene muchos alumnos.
 
 ### Clave Primaria

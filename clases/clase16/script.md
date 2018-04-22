@@ -42,7 +42,7 @@ Antes de comenzar debemos configurar el archivo config.json dentro de la carpeta
   "development": {
     "username": "root",
     "password": null,
-    "database": "todos",
+    "database": toDos,
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

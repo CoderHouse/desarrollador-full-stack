@@ -1,8 +1,3 @@
-#!/usr/bin/env node
-
-/**
- * Module dependencies.
- */
 const express = require('express');
 const logger = require('morgan');
 const cookieParser = require('cookie-parser');
@@ -93,7 +88,7 @@ app.use((err, req, res, next) => {
 });
 
 // Set Port
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || 3000);
 app.set('port', port);
 
 /**

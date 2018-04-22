@@ -23,7 +23,7 @@ html, body, #root {
     height: calc(100% - 75px);
 }
 
-.product-creation {
+.toDo-creation {
     position: fixed;
     display: flex;
     text-align: center;
@@ -35,33 +35,33 @@ html, body, #root {
     margin-bottom: 10px;
 }
 
-.product-creation button {
+.toDo-creation button {
     width: 100%;
 }
 
-.product-creation input {
+.toDo-creation input {
     width: 100%;
     margin-bottom: 10px;
 }
 
-.products-container {
+.toDos-container {
     border-left: 2px solid green;
     margin-left: 375px;
     height: 100%;
 }
 
-.products-container h3 {
+.toDos-container h3 {
     padding-left: 10px;
     text-decoration: underline;
 }
 
-.products-layout {
+.toDos-layout {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.product-creation h3 {
+.toDo-creation h3 {
     text-align: center;
     text-decoration: underline;
 }

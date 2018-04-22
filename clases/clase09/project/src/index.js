@@ -9,12 +9,12 @@ import './index.css';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import productReducer from './store/product/product.reducer'
+import itemReducer from './store/Item/Item.reducer'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-    product: productReducer
+    item: itemReducer
 });
 
 const store = createStore(rootReducer, composeEnhancers(

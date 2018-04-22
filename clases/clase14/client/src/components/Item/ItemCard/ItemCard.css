@@ -1,0 +1,31 @@
+.ItemCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s;
+    width: 250px;
+    height: 150px;
+}
+
+.ItemCardContainer {
+    text-align: center;
+    padding: 2px 16px;
+}
+
+.ItemCardTitleTitle {
+    text-align: center;
+}
+
+.ItemCardImage {
+    height: 100px;
+    margin: auto;
+}
+
+.ItemPreviewSpan {
+    position: absolute;
+    opacity: 0.4;
+    font-style: italic;
+}

@@ -1,0 +1,11 @@
+export const START_FETCH_LISTS = 'START_FETCH_LISTS';
+export const SET_LISTS = 'SET_LISTS';
+export const START_ADD_LIST = 'START_ADD_LIST';
+export const ADD_LIST = 'ADD_LIST';
+export const START_EDIT_LIST = 'START_EDIT_LIST';
+export const EDIT_LIST = 'EDIT_LIST';
+export const REMOVE_LIST = 'REMOVE_LIST';
+export const ERROR_FETCH_LISTS = 'ERROR_FETCH_LISTS';
+export const ERROR_ADD_LIST = 'ERROR_ADD_LIST';
+export const ERROR_EDIT_LIST = 'ERROR_EDIT_LIST';
+export const ERROR_REMOVE_LIST = 'ERROR_REMOVE_LIST';

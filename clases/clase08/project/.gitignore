@@ -6,7 +6,7 @@
 # testing
 /coverage
 
-# production
+# itemion
 /build
 
 # misc
@@ -14,7 +14,7 @@
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local
+.env.itemion.local
 
 npm-debug.log*
 yarn-debug.log*

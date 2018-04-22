@@ -66,6 +66,7 @@ class Toggle extends React.Component {
 ```
 
 ### Ejercicio 9
-- Mostrar un solo producto en la pantalla no tiene mucho sentido. El cliente me pide si en vez de mostrar 1 solo post podemos mostrar una lista que el nos va a enviar por mail.
-- Se pide entonces listar los productos que utilice el componente ProductCard creado en la clase anterior.
+- Mostrar un solo ItemCard en la pantalla no tiene mucho sentido. 
+El cliente me pide si en vez de mostrar 1 solo item podemos mostrar una lista que el nos va a enviar por mail.
+- Se pide entonces listar los items utilizando el componente ItemCard creado en la clase anterior.
 

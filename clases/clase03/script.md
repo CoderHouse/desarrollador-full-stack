@@ -90,6 +90,6 @@ class App extends Component {
 ```
 
 ### Ejercicio 8
-- Crear un componente producto que reciba como propiedades el titulo y la descripcion. 
-- Mostrar en la página un post.
+- Crear un componente ItemCard que reciba como propiedades el titulo y la descripcion. 
+- Mostrar en la página.
 

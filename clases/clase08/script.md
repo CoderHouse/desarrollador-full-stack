@@ -53,4 +53,4 @@ function incrementAsync() {
 
 ### Ejercio integrador 15
 - Modificar nuestra app para permitir la combinacion de reducers.
-- Agregar llamadas asincronicas al json-server para guardar/editar/elimiar productos.
+- Agregar llamadas asincronicas al json-server para guardar/editar/elimiar items.

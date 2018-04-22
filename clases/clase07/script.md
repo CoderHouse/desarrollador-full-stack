@@ -64,4 +64,4 @@ Object.assign({}, {title: 'This is a title'}, {body: 'this is a body'});
 https://github.com/reactjs/redux/blob/master/examples/counter-vanilla/index.html
 
 ## Ejercicio 14
-- Agregar Redux a nuestro proyecto de productos.
+- Agregar Redux a nuestro proyecto TO-DO.

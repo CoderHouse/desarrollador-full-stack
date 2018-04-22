@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import ProductCard from './ProductCard/ProductCard';
+import ItemCard from './ItemCard/ItemCard';
 import Avatar from './Avatar/Avatar';
 
 import request from './request';
@@ -14,29 +14,28 @@ class App extends Component {
 
     constructor() {
         super();
-        this.state = {products: []};
+        this.state = {toDos: []};
 
-        request('http://localhost:4000/products')
-            .then(products => {
-                this.setState({products: JSON.parse(products)});
+        request('http://localhost:4000/toDos')
+            .then(toDos => {
+                this.setState({toDos: JSON.parse(toDos)});
             });
     }
 
-    deleteProduct = (index) => {
-        const products = [...this.state.products];
-        products.splice(index, 1);
-        this.setState({products})
+    deleteItem = (index) => {
+        const toDos = [...this.state.toDos];
+        toDos.splice(index, 1);
+        this.setState({toDos})
     };
 
-    saveProduct = (event) => {
+    saveItem = (event) => {
         event.preventDefault();
-        const products = [...this.state.products];
-        products.push({
+        const toDos = [...this.state.toDos];
+        toDos.push({
             title: this.titleInput.value,
             description: this.descriptionInput.value,
-            img: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAMAAAAPdrEwAAAAY1BMVEX///8AAADd3d1iYmKtra309PT5+fnx8fHu7u6CgoLZ2dmqqqrg4OBXV1dERESGhobDw8M8PDzo6OgtLS24uLgoKCh7e3uioqIcHBxra2sREREyMjJKSkqOjo4XFxfJycmYmJg+dYoYAAABmUlEQVRYhe2X2XaCMBBAwxYWjSxFaVWq//+VSsCEhBAySNuHzn1jmLnGmSTnQAiC/DHU3wyqqX1vM3xUoxrV/17NboRE9fEH1G0fpGxz9ZcIf26trkS4tkpKY8ds6qMMJ1Y1PUHVsh+EXizmhmRQ9VWGo+95M3u+N/2ytdcybFzWQPJ8H0LVjQgH8+Yd/1dnoNrbL2+QoWuGQS6cxprPsJ03e3FftwervcvpHtjOy+5VWILVOtrhYKJw2jOo2r8rj4konA4SqM4JaUaP4agyfVPdpch1s3HlZJAwdcFzxPmIlNLDO+pgSBp6Eqql+iBB6viVxdfNtFKqbVKIWp57vu5YKyU5UC07eBjn7fqDqlDB1Km8LzMlsZiYCbmC1Im4i1ODS6OGqDtfxK+Hc2SSqaiDXFD3vs5tasCE1l09NIGWk51mpnJXi9vnUBEnmKvaYXIahavaYXI6H25q+KKVQdrUibHYTuykzleYx4O0qPXPdzduDup2lXk0yHl1tl9FlS6r3wbVqIapKxZsBHO84hEEQRAEQZDf4gHcnhi7zC9XEAAAAABJRU5ErkJggg=='
         });
-        this.setState({products});
+        this.setState({toDos: toDos});
         this.titleInput.value = '';
         this.descriptionInput.value = '';
         this.titleInput.focus();
@@ -46,27 +45,26 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="app-header">
-                    <Avatar url={this.avatarPlaceholder} alias="Eugenio Valeiras"></Avatar>
+                    <Avatar url={this.avatarPlaceholder} alias="USERNAME"></Avatar>
                 </div>
                 <div className="app-container">
-                    <form className="product-form" onSubmit={this.saveProduct}>
-                        <div className="product-creation">
-                            <h3>Add Product</h3>
+                    <form className="toDo-form" onSubmit={this.saveItem}>
+                        <div className="toDo-creation">
+                            <h3>Add To-Do</h3>
                             <input type="text" placeholder="Title" ref={(el) => this.titleInput = el}/>
                             <input type="text" placeholder="Description" ref={(el) => this.descriptionInput = el}/>
-                            <button onClick={this.saveProduct}>Save</button>
+                            <button onClick={this.saveItem}>Save</button>
                         </div>
                     </form>
-                    <div className="products-container">
-                        <div className="products-layout">
+                    <div className="toDos-container">
+                        <div className="toDos-layout">
                             {
-                                this.state.products.map((product, index) => (
-                                    <ProductCard
+                                this.state.toDos.map((toDo, index) => (
+                                    <ItemCard
                                         key={index + 1}
-                                        title={product.title}
-                                        img={product.img}
-                                        description={product.description}
-                                        handleClick={() => this.deleteProduct(index)}
+                                        title={toDo.title}
+                                        description={toDo.description}
+                                        handleClick={() => this.deleteItem(index)}
                                     />
                                 ))
                             }

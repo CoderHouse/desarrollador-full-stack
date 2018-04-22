@@ -12,8 +12,10 @@
 
 
 ### Ejercicio 10
-- El cliente ahora me pide que los productos ya no sean una lista fija sino que los usuarios puedan agregar nuevos. Para eso debemos agregar un formulario con una caja de texto (input) para el título y para la descripcion. (dejemos de lado la imagen por ahora)
-- Pero me solicita que cada vez que un usuario crea un producto, la caja de texto del titulo y la descripcion queden en blanco y al mismo tiempo se haga foco sobre el título. Dice que sin eso no nos va a pagar.
+- El cliente ahora me pide que los items ya no sean una lista fija sino que los usuarios puedan agregar nuevos. 
+Para eso debemos agregar un formulario con una caja de texto (input) para el título y para la descripcion.
+- Pero me solicita que cada vez que un usuario crea un item, la caja de texto del titulo y la descripcion queden en blanco y al mismo tiempo se haga foco sobre el título. 
+Dice que sin eso no nos va a pagar.
 
 ## Ciclo de vida
 Los componentes de react tienen un ciclo de vida. 
@@ -80,4 +82,4 @@ const Text = (props) => <p>{props.children}</p>;
 - El componente va a recibir como parametro el alias del usuario (alias) y una url para su imagen (imageURL).
 - El tamaño de la imagen debe fijarse a 50px por 50px.
 - Nuestro cliente quiere ver como queda pero nosotros no tenemos ningún servicio de autenticación en nuestro sitio para poder mostrar el avatar correspondiente por lo cual vamos a simular el funcionamiento pasandole por propiedad los valores correspondientes al alias y a la url de la imagen. 
-- Como dicho componente va a mostrarse en nuestra homepage vamos a insertarlo dentro del componente app recordando importarlo previamente.
+- Como dicho componente va a mostrarse en nuestra homepage vamos a insertarlo dentro del componente App recordando importarlo previamente.
