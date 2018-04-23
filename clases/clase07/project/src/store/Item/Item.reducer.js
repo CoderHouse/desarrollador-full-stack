@@ -2,18 +2,7 @@ import * as itemTypes from './Item.type';
 import {updateObject} from "../utility";
 
 const initialState = {
-    toDos: [
-        {
-            "id": "1",
-            "title": "Pear!",
-            "description": "This is an awesome Pear!"
-        },
-        {
-            "id": "2",
-            "title": "Banana",
-            "description": "This is a BANANA!"
-        }
-    ]
+    toDos: []
 };
 
 const editItem = (state, item) => {

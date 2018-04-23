@@ -1,17 +1,1 @@
-{
-  "toDos": [
-    {
-      "id": 1,
-      "title": "Learn JSX",
-      "description": "Learn basics of JSX",
-      "user": "evaleiras"
-    },
-    {
-      "id": 2,
-      "title": "Learn ReactJS",
-      "description": "Learn basics of ReactJS",
-      "user": "evaleiras"
-    }
-  ]
-
-}
+{"evaleiras":[{"title":"Eugenio testing","description":"Please test this","id":"e66a2d3e-24bb-e66d-0361-f3ca4386b70f","items":[]},{"title":"Eugenio please","description":"pleeeeeease","id":"eb7380f7-a9c6-ebe6-eb50-bdafbcd781f3","items":[]},{"title":"saras","description":"asrar","id":"8cc48fdb-c9ff-54cf-db30-370b5ae840d7","items":[]},{"title":"sadsa","description":"asdasd","id":"0003ca0f-5e26-5756-2914-4710b57bb062","items":[]},{"title":"asdas","description":"asdasd","id":"d7f24844-653e-7026-6a5b-9309523bf14b","items":[]},{"title":"sada","description":"asdasd","id":"a3d0dd10-d6d0-ce46-82a4-9ffe0ec74fd7","items":[]}]}

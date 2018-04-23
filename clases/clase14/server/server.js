@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const debug = require('debug')('project:server');
 const http = require('http');
+const cors = require('cors');
 
 const index = require('./routes/index');
 
@@ -65,6 +66,7 @@ const onListening = () => {
  * Create APP
  */
 const app = express();
+app.use(cors())
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -91,7 +93,7 @@ app.use((err, req, res, next) => {
 });
 
 // Set Port
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '8080');
 app.set('port', port);
 
 /**

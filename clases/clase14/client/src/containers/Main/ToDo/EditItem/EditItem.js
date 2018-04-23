@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ItemCard from "../../../components/Item/ItemCard/ItemCard";
+import ItemCard from "../../../../components/Item/ItemCard/ItemCard";
 import {connect} from "react-redux";
-import * as itemAction from "../../../store/Item/Item.action";
+import * as itemAction from "../../../../store/Item/Item.action";
 
 import './EditItem.css';
 

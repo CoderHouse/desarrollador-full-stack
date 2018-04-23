@@ -11,47 +11,64 @@ const guidGenerator = () => {
     return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
 };
 
-/* GET home page. */
-router.get('/:collection', (req, res) => {
-    const collection = req.params.collection;
-    const list = db[collection];
-    const filter = req.query.filter;
+router.get('/:user/list', (req, res) => {
+    const {user} = req.params;
+    const lists = db[user] || [];
 
-    res.json({Success: true, data: util.search(list, filter)})
+    res.json({Success: true, data: lists})
 });
 
-router.get('/:collection/:id', (req, res) => {
-    const collection = req.params.collection;
+router.get('/:user/list/:listId', (req, res) => {
+    const {user, listId} = req.params;
     const id = req.params.id;
-    const list = db[collection];
-    const element = list.find(el => el.id === id);
-    res.json({Success: true, data: element})
+    const lists = db[user] || [];
+
+    const element = lists.find(list => list.id === listId) || {};
+    res.json({Success: true, data: element.items})
 });
 
-router.post('/:collection', (req, res) => {
-    const collection = req.params.collection;
-    const el = req.body;
-    el.id = guidGenerator();
-    db[collection].push(el);
+router.post('/:user/list', (req, res) => {
+    const {user} = req.params;
+    const list = req.body;
+    list.id = guidGenerator();
+    list.items = [];
+
+    db[user] = db[user] || [];
+    db[user].push(list);
 
     fs.writeFile(`db.json`, JSON.stringify(db), () => {
-        res.setHeader('Content-Location', `${req.protocol}://${req.headers.host}/${collection}/${el.id}`);
-        return res.json({Success: true, data: el});
+        res.setHeader('Content-Location', `${req.protocol}://${req.headers.host}/${user}/list/${list.id}`);
+        return res.json({Success: true, data: list});
     });
 
 });
 
-router.put('/:collection/:id', (req, res) => {
-    const collection = req.params.collection;
-    const id = req.params.id;
-    const editBody = req.body;
-    editBody.id = id;
+router.post('/:user/list/:listId', (req, res) => {
+    const {user, listId} = req.params;
+    const item = req.body;
+    item.id = guidGenerator();
 
-    db[collection] = db[collection].map(el => {
-        if (el.id === id) {
+    db[user] = db[user] || [];
+    const list = db[user].find(list => list.id === listId) || [];
+    list.push(item);
+
+    fs.writeFile(`db.json`, JSON.stringify(db), () => {
+        res.setHeader('Content-Location', `${req.protocol}://${req.headers.host}/${user}/list/${list.id}`);
+        return res.json({Success: true, data: list});
+    });
+
+});
+
+router.put('/:user/list/:listId', (req, res) => {
+    const {user, listId} = req.params;
+    const editBody = req.body;
+    editBody.id = listId;
+
+    db[user] = db[user].map(list => {
+        if (list.id === listId) {
             return editBody
         }
-        return el;
+        return list;
     });
 
     fs.writeFile(`db.json`, JSON.stringify(db), () => {
@@ -60,10 +77,10 @@ router.put('/:collection/:id', (req, res) => {
 
 });
 
-router.delete('/:collection/:id', (req, res) => {
-    const collection = req.params.collection;
-    const id = req.params.id;
-    db[collection] = db[collection].filter(el => el.id !== id);
+router.delete('/:user/list/:listId', (req, res) => {
+    const {user, listId} = req.params;
+
+    db[user] = db[user].filter(list => list.id !== listId);
 
     fs.writeFile(`db.json`, JSON.stringify(db), (message) => {
         return res.json({Success: true});

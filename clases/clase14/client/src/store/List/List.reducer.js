@@ -13,7 +13,7 @@ const initialState = {
 };
 
 const startFetchLists = (state) => {
-    return updateObject( state, { loadingLists: true } );
+    return updateObject( state, { loadingLists: true, lists: [] } );
 };
 
 const setLists = (state, payload ) => {

@@ -10,12 +10,14 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import itemReducer from './store/Item/Item.reducer'
+import listReducer from './store/List/List.reducer'
 import authenticationReducer from './store/authentication/authentication.reducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
     item: itemReducer,
+    list: listReducer,
     authentication: authenticationReducer
 });
 

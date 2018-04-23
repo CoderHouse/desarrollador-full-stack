@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import ItemCard from "../../../components/Item/ItemCard/ItemCard";
+import ItemCard from "../../../../components/Item/ItemCard/ItemCard";
 
 import './CreateItem.css';
-import Spinner from "../../../components/UI/Spinner/Spinner";
+import Spinner from "../../../../components/UI/Spinner/Spinner";
 import {connect} from "react-redux";
 
-import * as itemAction from "../../../store/Item/Item.action";
+import * as itemAction from "../../../../store/Item/Item.action";
 
 class CreateItem extends Component {
 
@@ -24,7 +24,7 @@ class CreateItem extends Component {
             description: this.state.description,
         };
 
-        this.props.onItemAdded(newItem);
+        this.props.onItemAdded(this.props.user.userName, this.props.match.params.listId, newItem);
 
         this.titleInput.value = '';
         this.descriptionInput.value = '';
@@ -72,13 +72,14 @@ class CreateItem extends Component {
 
 const mapStateToProps = state => {
     return {
+        user: state.authentication.user,
         loadingAddItem: state.item.loadingAddItem
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        onItemAdded: (user, item) => dispatch(itemAction.addItem(user, item)),
+        onItemAdded: (user, listId, item) => dispatch(itemAction.addItem(user, listId, item)),
     }
 }
 

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
 
-import './CreateItem.css';
+import './CreateList.css';
+import Spinner from "../../../../components/UI/Spinner/Spinner";
+import * as listActions from '../../../../store/List/List.action';
 
 class CreateList extends Component {
 
@@ -20,7 +22,7 @@ class CreateList extends Component {
             description: this.state.description,
         };
 
-        this.props.saveHandler(newItem);
+        this.props.saveHandler(this.props.user.userName, newItem);
 
         this.titleInput.value = '';
         this.descriptionInput.value = '';
@@ -47,7 +49,7 @@ class CreateList extends Component {
         if (!this.props.loadingAddItem) {
             content = <form className="list-form" onSubmit={this.saveList}>
                 <div className="list-creation">
-                    <h3>List Creation</h3>
+                    <h3>LIST CREATION</h3>
                     <input type="text" placeholder="Title" ref={(el) => this.titleInput = el}
                            onChange={this.titleChanged}/>
                     <input type="text" placeholder="Description" ref={(el) => this.descriptionInput = el}
@@ -64,8 +66,15 @@ class CreateList extends Component {
 
 const mapStateToProps = state => {
     return {
+        user: state.authentication.user,
         loadingAddItem: state.item.loadingAddItem
     };
 };
 
-export default connect(mapStateToProps)(CreateList);
+const mapDispatchToProps = dispatch => {
+    return {
+        saveHandler: (user, list) => dispatch(listActions.addList(user, list))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(CreateList);

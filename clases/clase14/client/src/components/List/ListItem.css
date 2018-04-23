@@ -1,0 +1,30 @@
+.list-card {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 10px;
+    transition: 0.3s;
+    height: 80px;
+}
+
+.list-title {
+    flex: 0 0 15%;
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.list-description {
+    flex: 1 1 100%;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.list-actions {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+}

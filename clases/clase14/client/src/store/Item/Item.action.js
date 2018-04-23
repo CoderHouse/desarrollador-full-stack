@@ -1,14 +1,14 @@
 import * as itemTypes from './Item.type';
-import axios from '../../axios-toDos';
+import axios from '../../axios-api';
 
 const FAKE_REQUEST_DELAY = 500;
 
-export const fetchToDos = (user) => {
+export const fetchToDos = (user, listId) => {
     return dispatch => {
         dispatch({type: itemTypes.START_FETCH_TODOS});
-        axios.get('')
+        axios.get(`${user}/list/${listId}`)
             .then(toDos => {
-                const data = toDos.data.filter(item => item.user === user);
+                const {data} = toDos.data;
                 setTimeout(() => {
                     dispatch(setToDos(data));
                 }, FAKE_REQUEST_DELAY)
@@ -26,11 +26,11 @@ export const setToDos = (toDos) => {
     };
 };
 
-export const addItem = (user, item) => {
+export const addItem = (user, listId, item) => {
     item.user = user;
     return dispatch => {
         dispatch({type: itemTypes.START_ADD_ITEM});
-        axios.post('', item)
+        axios.post(`${user}/list/${listId}`, item)
             .then(({data}) => {
                 setTimeout(() => {
                     dispatch({type: itemTypes.ADD_ITEM, payload: data});

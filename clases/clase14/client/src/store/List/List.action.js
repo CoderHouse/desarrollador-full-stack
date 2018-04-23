@@ -3,12 +3,12 @@ import axios from '../../axios-api';
 
 const FAKE_REQUEST_DELAY = 500;
 
-export const fetchToDos = (user) => {
+export const fetchLists = (user) => {
     return dispatch => {
         dispatch({type: listTypes.START_FETCH_LISTS});
         axios.get(`${user}/list`)
             .then(lists => {
-                const data = lists.data;
+                const {data} = lists.data;
                 setTimeout(() => {
                     dispatch(setLists(data));
                 }, FAKE_REQUEST_DELAY)
@@ -32,7 +32,7 @@ export const addList = (user, list) => {
         axios.post(`${user}/list`, list)
             .then(({data}) => {
                 setTimeout(() => {
-                    dispatch({type: listTypes.ADD_LIST, payload: data});
+                    dispatch({type: listTypes.ADD_LIST, payload: data.data});
                 }, FAKE_REQUEST_DELAY)
             })
             .catch(error => {
