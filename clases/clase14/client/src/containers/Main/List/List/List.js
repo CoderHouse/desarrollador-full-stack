@@ -27,7 +27,7 @@ class List extends Component {
             const items = this.props.lists.map((item) => (
                 <ListItem
                     key={item.id}
-                    loading={item.loading}
+                    counter={item.items.length}
                     title={item.title}
                     description={item.description}
                     onView={() => this.onViewHandler(item.id)}
