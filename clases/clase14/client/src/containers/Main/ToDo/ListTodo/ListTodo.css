@@ -9,3 +9,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.To-Do-Loading {
+    height: 100%;
+    display: flex;
+}

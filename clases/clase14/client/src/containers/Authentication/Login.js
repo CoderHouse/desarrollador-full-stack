@@ -26,6 +26,7 @@ class Login extends Component {
                 <div className="login-form-container">
                     <label htmlFor="username" className="username-label">Username:</label>
                     <input id="username" placeholder="Username" ref={(input) => this.usernameInput = input}/>
+                    <div className="message-container"><b>Choose a username and manage their tasks</b></div>
                     <button onClick={this.handleLoginClick}>Login</button>
                 </div>
             </div>

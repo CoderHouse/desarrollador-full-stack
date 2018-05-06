@@ -35,14 +35,13 @@
 }
 
 .login-form-container button {
-    font-size: 18px;
+    font-size: 16px;
     width: 150px;
     padding: 3px;
     margin-top: 20px;
-    background: #0085ba;
-    border-color: #0073aa #006799 #006799;
-    box-shadow: 0 1px 0 #006799;
-    color: #fff;
     text-decoration: none;
-    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+
+.login-form-container .message-container {
+    margin: 10px 0;
 }

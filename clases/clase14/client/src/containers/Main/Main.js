@@ -11,7 +11,6 @@ import axios from '../../axios-api';
 import withErrorHandler from "../../hoc/withErrorHandler";
 
 import './Main.css';
-import Spinner from "../../components/UI/Spinner/Spinner";
 import CreateList from "./List/CreateList/CreateList";
 import List from "./List/List/List";
 import ListTodo from "./ToDo/ListTodo/ListTodo";
@@ -39,26 +38,19 @@ class Main extends Component {
     };
 
     render() {
+
         let content = (
-            <div className="loading-container">
-                <Spinner/>
-            </div>
+            <Switch>
+                <Route
+                    path="/app"
+                    exact
+                    component={List}/>
+
+                <Route
+                    path="/app/:listId"
+                    component={ListTodo}/>
+            </Switch>
         );
-
-        if (!this.props.loadingToDos) {
-            content = (
-                <Switch>
-                    <Route
-                        path="/app"
-                        exact
-                        component={List}/>
-
-                    <Route
-                        path="/app/:listId"
-                        render={(props) => ( <ListTodo {...props} /> )}/>
-                </Switch>
-            );
-        }
 
         if (this.props.errorFetchToDos || this.props.errorRemoveItem || this.props.errorAddItem) {
             content = (
@@ -81,14 +73,14 @@ class Main extends Component {
                             <Route
                                 path="/app"
                                 exact
-                                render={(props) => ( <CreateList {...props} />) }/>
+                                component={CreateList}/>
                             <Route
                                 path="/app/:listId"
                                 exact
-                                component={(props) => ( <CreateItem {...props} /> )}/>
+                                component={CreateItem}/>
                             <Route path="/app/:listId/:id"
                                    exact
-                                   render={(props) => ( <EditItem {...props} />) }/>
+                                   render={(props) => (<EditItem {...props} />)}/>
                         </Switch>
                     </div>
                     <div className="content-container">
@@ -106,7 +98,8 @@ const mapStateToProps = state => {
         errorFetchToDos: state.item.errorFetchToDos,
         errorRemoveItem: state.item.errorRemoveItem,
         errorAddItem: state.item.errorAddItem,
-        lists: state.list.lists
+        lists: state.list.lists,
+        loadingLists: state.list.loadingLists,
     };
 };
 

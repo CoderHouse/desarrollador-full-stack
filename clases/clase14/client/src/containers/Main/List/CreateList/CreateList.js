@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {connect} from "react-redux";
 
 import './CreateList.css';
@@ -44,30 +44,28 @@ class CreateList extends Component {
     };
 
     render() {
-        let content = <Spinner />;
-
-        if (!this.props.loadingAddItem) {
-            content = <form className="list-form" onSubmit={this.saveList}>
-                <div className="list-creation">
-                    <h3>LIST CREATION</h3>
-                    <input type="text" placeholder="Title" ref={(el) => this.titleInput = el}
-                           onChange={this.titleChanged}/>
-                    <input type="text" placeholder="Description" ref={(el) => this.descriptionInput = el}
-                           onChange={this.descriptionChanged}/>
-
-                    <button onClick={this.saveList}>Save</button>
-                </div>
-            </form>;
+        if (this.props.loadingAddList) {
+            return <Spinner/>;
         }
 
-        return content;
+        return <form className="list-form" onSubmit={this.saveList}>
+            <div className="list-creation">
+                <h3>LIST CREATION</h3>
+                <input type="text" placeholder="Title" ref={(el) => this.titleInput = el}
+                       onChange={this.titleChanged}/>
+                <input type="text" placeholder="Description" ref={(el) => this.descriptionInput = el}
+                       onChange={this.descriptionChanged}/>
+
+                <button onClick={this.saveList}>Save</button>
+            </div>
+        </form>;
     }
 }
 
 const mapStateToProps = state => {
     return {
         user: state.authentication.user,
-        loadingAddItem: state.item.loadingAddItem
+        loadingAddList: state.list.loadingAddList
     };
 };
 

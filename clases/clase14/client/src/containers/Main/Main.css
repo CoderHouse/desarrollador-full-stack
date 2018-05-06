@@ -1,3 +1,5 @@
+@value primary: #2edcd2;
+
 .logout-button {
 
 }
@@ -24,7 +26,7 @@
     display: flex;
     flex-direction: row;
     background-color: #fafafb;
-    border-bottom: 1px solid green;
+    border-bottom: 1px solid primary;
     justify-content: space-between;
 }
 
@@ -50,7 +52,7 @@
 }
 
 .content-container {
-    border-left: 2px solid green;
+    border-left: 1px solid primary;
     margin-left: 375px;
     height: 100%;
 }

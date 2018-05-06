@@ -51,7 +51,6 @@ class EditItem extends Component {
     handleEditClick = () => {
         const userName = this.getUserName();
         const listId = this.getListId();
-        const itemId = this.getItemId();
         this.props.onEditItem(userName, listId, this.state.item);
         this.props.history.push(`/app/${listId}`);
     };

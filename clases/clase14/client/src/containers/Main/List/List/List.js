@@ -21,26 +21,30 @@ class List extends Component {
     };
 
     render() {
-        let content = <Spinner/>;
-
-        if (!this.props.loadingLists) {
-            const items = this.props.lists.map((item) => (
-                <ListItem
-                    key={item.id}
-                    counter={item.items.length}
-                    title={item.title}
-                    description={item.description}
-                    onView={() => this.onViewHandler(item.id)}
-                    onRemove={() => this.onRemoveHandler(item.id)}/>
-            ));
-            content = (
-                <div className="list-container">
-                    {items}
+        if (this.props.loadingLists) {
+            return (
+                <div className="loading-container">
+                    <Spinner/>
                 </div>
             );
         }
 
-        return content;
+        const items = this.props.lists.map((item) => (
+            <ListItem
+                key={item.id}
+                loading={item.loading}
+                counter={item.items.length}
+                title={item.title}
+                description={item.description}
+                onView={() => this.onViewHandler(item.id)}
+                onRemove={() => this.onRemoveHandler(item.id)}/>
+        ));
+
+        return (
+            <div className="list-container">
+                {items}
+            </div>
+        )
     }
 }
 
@@ -55,7 +59,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         fetchLists: user => dispatch(listAction.fetchLists(user)),
-        removeList: (user, listId) =>  dispatch(listAction.removeList(user, listId)),
+        removeList: (user, listId) => dispatch(listAction.removeList(user, listId)),
     };
 }
 

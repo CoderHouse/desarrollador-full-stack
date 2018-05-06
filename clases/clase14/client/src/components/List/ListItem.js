@@ -1,12 +1,12 @@
 import React from 'react';
 import './ListItem.css';
-import Spinner from "../UI/Spinner/Spinner";
+import ProgressBar from "../UI/ProgressBar/ProgressBar";
 
 const ListItem = (props) => {
     if (props.loading) {
         return (
             <div className="list-card">
-                <Spinner/>
+                <ProgressBar/>
             </div>
         )
     }

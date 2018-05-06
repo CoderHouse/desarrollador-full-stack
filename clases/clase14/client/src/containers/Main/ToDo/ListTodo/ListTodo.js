@@ -30,18 +30,23 @@ class ListTodo extends Component {
     };
 
     render() {
-        let content = <Spinner/>;
-
-        if (!this.props.loadingToDos) {
-            content = this.props.toDos.map((toDo) => (
-                <ItemCard
-                    key={toDo.id}
-                    title={toDo.title}
-                    description={toDo.description}
-                    handleEditClick={() => this.onEditHandler(toDo.id)}
-                    handleDeleteClick={() => this.onRemoveHandler(toDo.id)}/>
-            ));
+        if (this.props.loadingToDos) {
+            return (
+                <div className="loading-container">
+                    <Spinner/>
+                </div>
+            );
         }
+
+        let content = this.props.toDos.map((toDo) => (
+            <ItemCard
+                key={toDo.id}
+                loading={toDo.loading}
+                title={toDo.title}
+                description={toDo.description}
+                handleEditClick={() => this.onEditHandler(toDo.id)}
+                handleDeleteClick={() => this.onRemoveHandler(toDo.id)}/>
+        ));
 
         return (
             <div className="toDos-container">
