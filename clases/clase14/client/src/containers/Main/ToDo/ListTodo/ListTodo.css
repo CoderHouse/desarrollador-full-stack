@@ -3,3 +3,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.toDos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

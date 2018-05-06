@@ -2,6 +2,15 @@
 
 }
 
+.loading-container {
+    display: flex;
+    height: 100%;
+    flex: 1 0 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .Main {
     display: flex;
     flex-direction: column;
@@ -25,7 +34,6 @@
 
 .main-container {
     margin-top: 76px;
-    height: 100%;
     height: calc(100% - 75px);
 }
 
@@ -41,11 +49,7 @@
     margin-bottom: 10px;
 }
 
-.toDos-container {
-    overflow-y: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.content-container {
     border-left: 2px solid green;
     margin-left: 375px;
     height: 100%;

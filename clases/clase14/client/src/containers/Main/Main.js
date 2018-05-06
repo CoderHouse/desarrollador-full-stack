@@ -18,6 +18,7 @@ import ListTodo from "./ToDo/ListTodo/ListTodo";
 
 class Main extends Component {
     state = {
+        actualList: null,
         title: '',
         description: ''
     };
@@ -30,12 +31,16 @@ class Main extends Component {
 
     handleLogoutClick = () => {
         this.props.onRemoveAuthentication();
-        this.props.history.push(`/auth`);
+        this.props.history.replace(`/auth`);
+    };
+
+    handleAllListsClick = () => {
+        this.props.history.replace(`/app`);
     };
 
     render() {
         let content = (
-            <div className="center">
+            <div className="loading-container">
                 <Spinner/>
             </div>
         );
@@ -46,7 +51,7 @@ class Main extends Component {
                     <Route
                         path="/app"
                         exact
-                        render={(props) => ( <List {...props} />) }/>
+                        component={List}/>
 
                     <Route
                         path="/app/:listId"
@@ -67,6 +72,7 @@ class Main extends Component {
             <div className="Main">
                 <div className="main-header">
                     <Avatar url={this.avatarPlaceholder} alias={this.props.user.userName}/>
+                    <button className="logout-button" onClick={this.handleAllListsClick}>All Lists</button>
                     <button className="logout-button" onClick={this.handleLogoutClick}>Log out</button>
                 </div>
                 <div className="main-container">
@@ -85,10 +91,8 @@ class Main extends Component {
                                    render={(props) => ( <EditItem {...props} />) }/>
                         </Switch>
                     </div>
-                    <div className="toDos-container">
-                        <div>
-                            {content}
-                        </div>
+                    <div className="content-container">
+                        {content}
                     </div>
                 </div>
             </div>
@@ -102,6 +106,7 @@ const mapStateToProps = state => {
         errorFetchToDos: state.item.errorFetchToDos,
         errorRemoveItem: state.item.errorRemoveItem,
         errorAddItem: state.item.errorAddItem,
+        lists: state.list.lists
     };
 };
 

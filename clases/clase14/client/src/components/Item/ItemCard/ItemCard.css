@@ -7,12 +7,13 @@
     margin: 10px;
     transition: 0.3s;
     width: 250px;
-    height: 150px;
 }
 
 .ItemCardContainer {
     text-align: center;
     padding: 2px 16px;
+    min-height: 80px;
+    max-height: 80px;
 }
 
 .ItemCardTitleTitle {
@@ -28,4 +29,15 @@
     position: absolute;
     opacity: 0.4;
     font-style: italic;
+}
+
+.ItemCardActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 30px;
+}
+
+.ItemCardActions button {
+    width: 25%;
 }

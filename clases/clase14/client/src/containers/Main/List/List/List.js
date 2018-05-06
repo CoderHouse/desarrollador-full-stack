@@ -16,12 +16,8 @@ class List extends Component {
         this.props.history.push(`/app/${listId}`);
     };
 
-    onEditHandler = (itemId) => {
-
-    };
-
-    onRemoveHandler = (itemId) => {
-
+    onRemoveHandler = (listId) => {
+        this.props.removeList(this.props.user.userName, listId);
     };
 
     render() {
@@ -31,10 +27,10 @@ class List extends Component {
             const items = this.props.lists.map((item) => (
                 <ListItem
                     key={item.id}
+                    loading={item.loading}
                     title={item.title}
                     description={item.description}
                     onView={() => this.onViewHandler(item.id)}
-                    onEdit={() => this.onEditHandler(item.id)}
                     onRemove={() => this.onRemoveHandler(item.id)}/>
             ));
             content = (
@@ -58,7 +54,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchLists: (user) => dispatch(listAction.fetchLists(user))
+        fetchLists: user => dispatch(listAction.fetchLists(user)),
+        removeList: (user, listId) =>  dispatch(listAction.removeList(user, listId)),
     };
 }
 

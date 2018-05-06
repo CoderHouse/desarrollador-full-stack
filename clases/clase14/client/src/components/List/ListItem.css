@@ -1,13 +1,14 @@
 .list-card {
     display: flex;
     flex-direction: row;
-    flex: 1 1 100%;
+    flex: 1 0 100%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin: 10px;
     transition: 0.3s;
-    height: 80px;
+    min-height: 30px;
+    max-height: 30px;
 }
 
 .list-title {
@@ -18,13 +19,24 @@
 }
 
 .list-description {
-    flex: 1 1 100%;
+    flex: 1 1 80%;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.list-counter {
+    flex: 1 1 20%;
     font-size: 16px;
     font-weight: normal;
 }
 
 .list-actions {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-self: end;
+}
+
+.list-actions button {
+    margin: 5px;
+    width: 90px;
 }

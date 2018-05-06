@@ -6,7 +6,7 @@ const FAKE_REQUEST_DELAY = 500;
 export const fetchLists = (user) => {
     return dispatch => {
         dispatch({type: listTypes.START_FETCH_LISTS});
-        axios.get(`${user}/list`)
+        axios.get(`${user}`)
             .then(lists => {
                 const {data} = lists.data;
                 setTimeout(() => {
@@ -29,7 +29,7 @@ export const setLists = (lists) => {
 export const addList = (user, list) => {
     return dispatch => {
         dispatch({type: listTypes.START_ADD_LIST});
-        axios.post(`${user}/list`, list)
+        axios.post(`${user}`, list)
             .then(({data}) => {
                 setTimeout(() => {
                     dispatch({type: listTypes.ADD_LIST, payload: data.data});
@@ -44,7 +44,7 @@ export const addList = (user, list) => {
 export const editList = (user, list) => {
     return dispatch => {
         dispatch({type: listTypes.START_EDIT_LIST, payload: list.id});
-        axios.put(`${user}/list/${list.id}`,
+        axios.put(`${user}/${list.id}`,
             {
                 title: list.title,
                 description: list.description
@@ -63,7 +63,7 @@ export const editList = (user, list) => {
 export const removeList = (user, listId) => {
     return dispatch => {
         dispatch({type: listTypes.START_EDIT_LIST, payload: listId});
-        axios.delete(`/${user}/list/${listId}`)
+        axios.delete(`/${user}/${listId}`)
             .then(_ => {
                 setTimeout(() => {
                     dispatch({type: listTypes.REMOVE_LIST, payload: listId});

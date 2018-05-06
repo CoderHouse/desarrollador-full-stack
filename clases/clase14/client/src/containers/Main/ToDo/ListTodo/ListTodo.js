@@ -9,16 +9,24 @@ import './ListTodo.css';
 
 class ListTodo extends Component {
 
+    getUserName = () => this.props.user.userName;
+    getListId = () => this.props.match.params.listId;
+
     componentDidMount() {
-        this.props.fetchToDos(this.props.user.userName, this.props.match.params.listId);
+        const userName = this.getUserName();
+        const listId = this.getListId();
+        this.props.fetchToDos(userName, listId);
     }
 
     onEditHandler = (itemId) => {
-
+        const listId = this.getListId();
+        this.props.history.push(`/app/${listId}/${itemId}`);
     };
 
     onRemoveHandler = (itemId) => {
-
+        const userName = this.getUserName();
+        const listId = this.getListId();
+        this.props.deleteToDo(userName, listId, itemId);
     };
 
     render() {
@@ -35,7 +43,11 @@ class ListTodo extends Component {
             ));
         }
 
-        return content;
+        return (
+            <div className="toDos-container">
+                {content}
+            </div>
+        );
     }
 }
 
@@ -49,8 +61,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchToDos: (user, listId) => dispatch(itemAction.fetchToDos(user, listId))
+        fetchToDos: (user, listId) => dispatch(itemAction.fetchToDos(user, listId)),
+        deleteToDo: (userName, listId, itemId) => dispatch(itemAction.removeItem(userName, listId, itemId)),
     };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ListTodo);
+

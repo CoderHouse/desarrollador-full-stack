@@ -26,9 +26,11 @@ class CreateItem extends Component {
 
         this.titleInput.value = '';
         this.descriptionInput.value = '';
-        this.titleInput.focus();
 
-
+        this.setState({
+            title: '',
+            description: ''
+        });
     };
 
     titleChanged = (el) => {
@@ -55,8 +57,8 @@ class CreateItem extends Component {
                     <input type="text" placeholder="Description" ref={(el) => this.descriptionInput = el}
                            onChange={this.descriptionChanged}/>
                     <ItemCard
-                        title={this.state.title || 'Title'}
-                        description={this.state.description || 'Description'}
+                        title={this.state.title}
+                        description={this.state.description}
                         preview={true}
                     />
                     <button onClick={this.saveItem}>Save</button>

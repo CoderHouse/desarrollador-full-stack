@@ -7,6 +7,10 @@ import './EditItem.css';
 
 class EditItem extends Component {
 
+    getUserName = () => this.props.user.userName;
+    getListId = () => this.props.match.params.listId;
+    getItemId = () => this.props.match.params.id;
+
     state = {
         item: {
             title: '',
@@ -15,15 +19,15 @@ class EditItem extends Component {
     };
 
     componentDidMount() {
-        this.fetchitem();
+        this.fetchItem();
     }
 
     componentWillReceiveProps(nextProps) {
-        this.fetchitem(nextProps);
+        this.fetchItem(nextProps);
     }
 
-    fetchitem(props = this.props) {
-        const itemId = props.match.params.id;
+    fetchItem(props = this.props) {
+        const itemId = this.getItemId();
         const item = props.toDos.find(item => item.id === itemId);
         this.setState({ item: item || {} });
     }
@@ -45,8 +49,11 @@ class EditItem extends Component {
     };
 
     handleEditClick = () => {
-        this.props.oneditItemById(this.state.item);
-        this.props.history.push('/app');
+        const userName = this.getUserName();
+        const listId = this.getListId();
+        const itemId = this.getItemId();
+        this.props.onEditItem(userName, listId, this.state.item);
+        this.props.history.push(`/app/${listId}`);
     };
 
     render() {
@@ -75,13 +82,14 @@ class EditItem extends Component {
 
 const mapStateToProps = state => {
     return {
+        user: state.authentication.user,
         toDos: state.item.toDos
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        oneditItemById: (item) => dispatch(itemAction.editItem(item)),
+        onEditItem: (userName, listId, item) => dispatch(itemAction.editItem(userName, listId, item))
     }
 };
 

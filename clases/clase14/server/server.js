@@ -9,7 +9,7 @@ const debug = require('debug')('project:server');
 const http = require('http');
 const cors = require('cors');
 
-const index = require('./routes/index');
+const routes = require('./routes');
 
 /**
  * Create Aux Functions
@@ -66,14 +66,16 @@ const onListening = () => {
  * Create APP
  */
 const app = express();
-app.use(cors())
+app.use(cors());
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.use('/', index);
+app.use('/', routes.user);
+app.use('/', routes.list);
+app.use('/', routes.item);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

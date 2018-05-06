@@ -47,7 +47,7 @@ export const startAddToDos = (state) => {
 };
 
 export const addToDos = (state, payload) => {
-    const newItemList = [...state.toDos, payload];
+    const newItemList = [...state.toDos, payload.data];
     return updateObject(state, {toDos: newItemList, loadingAddItem: false});
 };
 

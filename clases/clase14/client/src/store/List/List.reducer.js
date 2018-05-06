@@ -3,9 +3,9 @@ import {updateObject} from "../utility";
 
 const initialState = {
     lists: [],
+
     loadingLists: false,
     loadingAddList: false,
-
     errorFetchLists: false,
     errorAddList: false,
     errorEditList: false,

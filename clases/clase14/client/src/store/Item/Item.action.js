@@ -6,7 +6,7 @@ const FAKE_REQUEST_DELAY = 500;
 export const fetchToDos = (user, listId) => {
     return dispatch => {
         dispatch({type: itemTypes.START_FETCH_TODOS});
-        axios.get(`${user}/list/${listId}`)
+        axios.get(`${user}/${listId}`)
             .then(toDos => {
                 const {data} = toDos.data;
                 setTimeout(() => {
@@ -30,7 +30,7 @@ export const addItem = (user, listId, item) => {
     item.user = user;
     return dispatch => {
         dispatch({type: itemTypes.START_ADD_ITEM});
-        axios.post(`${user}/list/${listId}`, item)
+        axios.post(`${user}/${listId}`, item)
             .then(({data}) => {
                 setTimeout(() => {
                     dispatch({type: itemTypes.ADD_ITEM, payload: data});
@@ -42,11 +42,12 @@ export const addItem = (user, listId, item) => {
     }
 };
 
-export const editItem = (item) => {
+export const editItem = (userName, listId, item) => {
     return dispatch => {
-        dispatch({type: itemTypes.START_EDIT_ITEM, payload: item.id});
+        const itemId = item.id;
+        dispatch({type: itemTypes.START_EDIT_ITEM, payload: itemId});
         axios.put(
-            `/${item.id}`,
+            `/${userName}/${listId}/${itemId}`,
             {
                 title: item.title,
                 description: item.description,
@@ -63,10 +64,10 @@ export const editItem = (item) => {
     }
 };
 
-export const removeItem = (itemId) => {
+export const removeItem = (userName, listId, itemId) => {
     return dispatch => {
         dispatch({type: itemTypes.START_EDIT_ITEM, payload: itemId});
-        axios.delete(`/${itemId}`)
+        axios.delete(`/${userName}/${listId}/${itemId}`)
             .then(_ => {
                 setTimeout(() => {
                     dispatch({type: itemTypes.REMOVE_ITEM, payload: itemId});

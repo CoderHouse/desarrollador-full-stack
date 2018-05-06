@@ -21,9 +21,11 @@ class ItemCard extends Component {
                     <div className="ItemCardContainer">
                         <span>{this.props.description}</span>
                     </div>
+                    <div className="ItemCardActions">
                     {this.props.handleEditClick ? <button onClick={this.props.handleEditClick}>Edit</button> : null}
                     {this.props.handleDeleteClick ?
                         <button className="danger" onClick={this.props.handleDeleteClick}>Delete</button> : null}
+                    </div>
                 </Virtual>
             );
         }

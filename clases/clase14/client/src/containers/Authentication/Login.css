@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f1f1f1;
+    background-image: linear-gradient(-90deg,#00aad1 0,#00dfba 100%);
 }
 
 .login-form img {
@@ -35,8 +35,10 @@
 }
 
 .login-form-container button {
-    font-size: 24px;
-    padding: 10px;
+    font-size: 18px;
+    width: 150px;
+    padding: 3px;
+    margin-top: 20px;
     background: #0085ba;
     border-color: #0073aa #006799 #006799;
     box-shadow: 0 1px 0 #006799;

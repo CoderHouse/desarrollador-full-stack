@@ -22,7 +22,7 @@ class Login extends Component {
 
         return (
             <div className="login-form">
-                <img alt="coderhouse" src={require('../../assets/iso.png')}/>
+                <img alt="coderhouse" src={require('../../assets/isologo-black.png')}/>
                 <div className="login-form-container">
                     <label htmlFor="username" className="username-label">Username:</label>
                     <input id="username" placeholder="Username" ref={(input) => this.usernameInput = input}/>
